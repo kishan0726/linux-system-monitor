@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 
+// Get Memory Information
 long long getMemValue(const std::string &key)
 {
     std::ifstream file("/proc/meminfo");
@@ -17,12 +18,8 @@ long long getMemValue(const std::string &key)
     std::string unit;
 
     while (file >> name >> value >> unit)
-    {
         if (name == key)
-        {
             return value;
-        }
-    }
 
     return 0;
 }
@@ -54,39 +51,15 @@ int main()
         if (swapTotal > 0)
             swapUsage = 100.0 * static_cast<double>(swapUsed) / static_cast<double>(swapTotal);
 
-        std::cout << "Total Memory: "
-                  << totalGB
-                  << " GB\n";
-
-        std::cout << "Available Memory: "
-                  << availableGB
-                  << " GB\n";
-
-        std::cout << "Used Memory: "
-                  << usedGB
-                  << " GB\n";
-
-        std::cout << "Memory Usage: "
-                  << memoryUsage
-                  << "%\n";
-
+        std::cout << "Total Memory: " << totalGB << " GB\n";
+        std::cout << "Available Memory: " << availableGB << " GB\n";
+        std::cout << "Used Memory: " << usedGB << " GB\n";
+        std::cout << "Memory Usage: " << memoryUsage << "%\n";
         std::cout << "\nSwap Memory\n";
-
-        std::cout << "Total Swap: "
-                  << swapTotalGB
-                  << " GB\n";
-
-        std::cout << "Used Swap: "
-                  << swapUsedGB
-                  << " GB\n";
-
-        std::cout << "Free Swap: "
-                  << swapFreeGB
-                  << " GB\n";
-
-        std::cout << "Swap Usage: "
-                  << swapUsage
-                  << "%\n";
+        std::cout << "Total Swap: " << swapTotalGB << " GB\n";
+        std::cout << "Used Swap: " << swapUsedGB << " GB\n";
+        std::cout << "Free Swap: " << swapFreeGB << " GB\n";
+        std::cout << "Swap Usage: " << swapUsage << "%\n";
     }
 
     return 0;
