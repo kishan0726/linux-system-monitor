@@ -1,0 +1,5 @@
+/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles/linux-system-monitor.dir
+/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles/edit_cache.dir
+/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles/rebuild_cache.dir
+/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles/linux-system-monitor_autogen_timestamp_deps.dir
+/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles/linux-system-monitor_autogen.dir
