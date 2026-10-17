@@ -1,32 +1,34 @@
 
 cmake_minimum_required(VERSION 3.21)
 
-project(LinuxSystemMonitor LANGUAGES CXX)
+project(LinuxSystemMonitor VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_AUTOMOC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS
-    Core
-    Widgets
-    WebEngineWidgets
-    WebChannel
-)
+find_package(Qt6 REQUIRED COMPONENTS Quick)
 
-add_executable(linux-system-monitor
+qt_standard_project_setup(REQUIRES 6.5)
+
+qt_add_executable(linux-system-monitor
     src/main.cpp
-    src/monitor.cpp
-    include/monitor.h
+    src/cpu_monitor.cpp
+    include/cpu_monitor.h
 )
 
-target_include_directories(linux-system-monitor PRIVATE
-    include
+qt_add_qml_module(linux-system-monitor
+    URI LinuxSystemMonitor
+    VERSION 1.0
+    QML_FILES
+        qml/Main.qml
+        qml/components/ResourceChart.qml
 )
 
 target_link_libraries(linux-system-monitor PRIVATE
-    Qt6::Core
-    Qt6::Widgets
-    Qt6::WebEngineWidgets
-    Qt6::WebChannel
+    Qt6::Quick
+)
+
+target_include_directories(linux-system-monitor
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
 )

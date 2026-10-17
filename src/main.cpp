@@ -1,36 +1,31 @@
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include <QCoreApplication>
 
-#include <QApplication>
-#include <QMainWindow>
-#include <QWebEngineView>
-#include <QWebEnginePage>
-#include <QWebChannel>
-#include <QDir>
-
-#include "monitor.h"
+#include "cpu_monitor.h"
 
 int main(int argc, char *argv[])
 {
-    QApplication app(argc, argv);
+    QGuiApplication app(argc, argv);
 
-    QMainWindow window;
-    window.setWindowTitle("Linux System Monitor");
-    window.resize(1440, 900);
+    QGuiApplication::setApplicationName("LinuxSystemMonitor");
 
-    auto *view = new QWebEngineView(&window);
+    QQmlApplicationEngine engine;
+    CpuMonitor cpuMonitor;
 
-    auto *monitor = new Monitor(&window);
-    auto *channel = new QWebChannel(view->page());
+    engine.rootContext()->setContextProperty(
+        "cpuMonitor", &cpuMonitor);
 
-    channel->registerObject("monitor", monitor);
-    view->page()->setWebChannel(channel);
+    QObject::connect(
+        &engine,
+        &QQmlApplicationEngine::objectCreationFailed,
+        &app,
+        []() { QCoreApplication::exit(-1); },
+        Qt::QueuedConnection
+    );
 
-    const QString htmlPath =
-        QDir::current().filePath("ui/index.html");
-
-    view->load(QUrl::fromLocalFile(htmlPath));
-
-    window.setCentralWidget(view);
-    window.show();
+    engine.loadFromModule("LinuxSystemMonitor", "Main");
 
     return app.exec();
 }

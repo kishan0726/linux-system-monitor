@@ -1,0 +1,14 @@
+-rootPath
+/home/kishan/Documents/Projects/linux-system-monitor
+-cmake-output
+-output-file
+/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/qml_imports/linux-system-monitor_build.cmake
+-importPath
+/home/kishan/Documents/Projects/linux-system-monitor/build
+-importPath
+/home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor
+-importPath
+/usr/lib64/qt6/qml
+-qrcFiles
+/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qmake_LinuxSystemMonitor.qrc
+/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/linux-system-monitor_raw_qml_0.qrc

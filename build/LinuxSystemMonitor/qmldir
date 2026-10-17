@@ -1,0 +1,7 @@
+module LinuxSystemMonitor
+typeinfo linux-system-monitor.qmltypes
+prefer :/qt/qml/LinuxSystemMonitor/
+Main 1.0 qml/Main.qml
+ResourceChart 1.0 qml/components/ResourceChart.qml
+depends QtQuick
+

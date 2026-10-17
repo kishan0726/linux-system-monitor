@@ -1,11 +1,12 @@
 linux-system-monitor_autogen/timestamp: \
 	/home/kishan/Documents/Projects/linux-system-monitor/CMakeLists.txt \
+	/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/qml_imports/linux-system-monitor_conf.cmake \
 	/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles/4.3.0/CMakeCXXCompiler.cmake \
 	/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles/4.3.0/CMakeSystem.cmake \
 	/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/moc_predefs.h \
-	/home/kishan/Documents/Projects/linux-system-monitor/include/monitor.h \
+	/home/kishan/Documents/Projects/linux-system-monitor/include/cpu_monitor.h \
+	/home/kishan/Documents/Projects/linux-system-monitor/src/cpu_monitor.cpp \
 	/home/kishan/Documents/Projects/linux-system-monitor/src/main.cpp \
-	/home/kishan/Documents/Projects/linux-system-monitor/src/monitor.cpp \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/bitsperlong.h \
 	/usr/include/asm-generic/errno-base.h \
@@ -275,9 +276,12 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/include/linux/types.h \
 	/usr/include/locale.h \
 	/usr/include/pthread.h \
-	/usr/include/qt6/QtCore/QJsonObject \
+	/usr/include/qt6/QtCore/QList \
 	/usr/include/qt6/QtCore/QObject \
+	/usr/include/qt6/QtCore/QString \
 	/usr/include/qt6/QtCore/QTimer \
+	/usr/include/qt6/QtCore/QVariant \
+	/usr/include/qt6/QtCore/QVariantList \
 	/usr/include/qt6/QtCore/q17memory.h \
 	/usr/include/qt6/QtCore/q20bit.h \
 	/usr/include/qt6/QtCore/q20functional.h \
@@ -303,9 +307,6 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qbytearrayalgorithms.h \
 	/usr/include/qt6/QtCore/qbytearraylist.h \
 	/usr/include/qt6/QtCore/qbytearrayview.h \
-	/usr/include/qt6/QtCore/qcalendar.h \
-	/usr/include/qt6/QtCore/qcborcommon.h \
-	/usr/include/qt6/QtCore/qcborvalue.h \
 	/usr/include/qt6/QtCore/qchar.h \
 	/usr/include/qt6/QtCore/qcompare.h \
 	/usr/include/qt6/QtCore/qcompare_impl.h \
@@ -320,10 +321,8 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qcontiguouscache.h \
 	/usr/include/qt6/QtCore/qdarwinhelpers.h \
 	/usr/include/qt6/QtCore/qdatastream.h \
-	/usr/include/qt6/QtCore/qdatetime.h \
 	/usr/include/qt6/QtCore/qdeadlinetimer.h \
 	/usr/include/qt6/QtCore/qdebug.h \
-	/usr/include/qt6/QtCore/qendian.h \
 	/usr/include/qt6/QtCore/qeventloop.h \
 	/usr/include/qt6/QtCore/qexceptionhandling.h \
 	/usr/include/qt6/QtCore/qflags.h \
@@ -339,13 +338,8 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qiodevicebase.h \
 	/usr/include/qt6/QtCore/qiterable.h \
 	/usr/include/qt6/QtCore/qiterator.h \
-	/usr/include/qt6/QtCore/qjsondocument.h \
-	/usr/include/qt6/QtCore/qjsonobject.h \
-	/usr/include/qt6/QtCore/qjsonparseerror.h \
-	/usr/include/qt6/QtCore/qjsonvalue.h \
 	/usr/include/qt6/QtCore/qlatin1stringview.h \
 	/usr/include/qt6/QtCore/qlist.h \
-	/usr/include/qt6/QtCore/qlocale.h \
 	/usr/include/qt6/QtCore/qlogging.h \
 	/usr/include/qt6/QtCore/qmalloc.h \
 	/usr/include/qt6/QtCore/qmap.h \
@@ -363,7 +357,6 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qpair.h \
 	/usr/include/qt6/QtCore/qprocessordetection.h \
 	/usr/include/qt6/QtCore/qrefcount.h \
-	/usr/include/qt6/QtCore/qregularexpression.h \
 	/usr/include/qt6/QtCore/qscopedpointer.h \
 	/usr/include/qt6/QtCore/qscopeguard.h \
 	/usr/include/qt6/QtCore/qset.h \
@@ -408,10 +401,9 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qtversionchecks.h \
 	/usr/include/qt6/QtCore/qtypeinfo.h \
 	/usr/include/qt6/QtCore/qtypes.h \
-	/usr/include/qt6/QtCore/qurl.h \
 	/usr/include/qt6/QtCore/qutf8stringview.h \
-	/usr/include/qt6/QtCore/quuid.h \
 	/usr/include/qt6/QtCore/qvariant.h \
+	/usr/include/qt6/QtCore/qvariantlist.h \
 	/usr/include/qt6/QtCore/qvarlengtharray.h \
 	/usr/include/qt6/QtCore/qversiontagging.h \
 	/usr/include/qt6/QtCore/qxptype_traits.h \
@@ -489,6 +481,7 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/lib64/cmake/Qt6Core/Qt6CoreConfigExtras.cmake \
 	/usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersion.cmake \
 	/usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake \
+	/usr/lib64/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in \
 	/usr/lib64/cmake/Qt6Core/Qt6CoreDependencies.cmake \
 	/usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake \
 	/usr/lib64/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake \
@@ -821,46 +814,6 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/lib64/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake \
 	/usr/lib64/cmake/Qt6OpenGL/Qt6OpenGLTargetsPrecheck.cmake \
 	/usr/lib64/cmake/Qt6OpenGL/Qt6OpenGLVersionlessAliasTargets.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningConfig.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningConfigVersion.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningConfigVersionImpl.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningDependencies.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningPlugins.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningTargets.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6PositioningVersionlessAliasTargets.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryGeoclue2PluginAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryGeoclue2PluginConfig.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryGeoclue2PluginTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryGeoclue2PluginTargets.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryGeoclue2PluginTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginConfig.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginTargets.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryNmeaPluginTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginConfig.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginTargets.cmake \
-	/usr/lib64/cmake/Qt6Positioning/Qt6QGeoPositionInfoSourceFactoryPollPluginTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportConfig.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersion.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersionImpl.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportDependencies.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportPlugins.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6PrintSupportVersionlessAliasTargets.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6QCupsPrinterSupportPluginAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6QCupsPrinterSupportPluginConfig.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6QCupsPrinterSupportPluginTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6QCupsPrinterSupportPluginTargets.cmake \
-	/usr/lib64/cmake/Qt6PrintSupport/Qt6QCupsPrinterSupportPluginTargetsPrecheck.cmake \
 	/usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6LabsPlatformpluginAdditionalTargetInfo.cmake \
 	/usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6LabsPlatformpluginConfig.cmake \
 	/usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6LabsPlatformpluginTargets-relwithdebinfo.cmake \
@@ -1184,6 +1137,7 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/lib64/cmake/Qt6Qml/Qt6QmlDependencies.cmake \
 	/usr/lib64/cmake/Qt6Qml/Qt6QmlFindQmlscInternal.cmake \
 	/usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake \
+	/usr/lib64/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in \
 	/usr/lib64/cmake/Qt6Qml/Qt6QmlPlugins.cmake \
 	/usr/lib64/cmake/Qt6Qml/Qt6QmlProperties.cmake \
 	/usr/lib64/cmake/Qt6Qml/Qt6QmlPublicCMakeHelpers.cmake \
@@ -1191,6 +1145,7 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/lib64/cmake/Qt6Qml/Qt6QmlTargets.cmake \
 	/usr/lib64/cmake/Qt6Qml/Qt6QmlTargetsPrecheck.cmake \
 	/usr/lib64/cmake/Qt6Qml/Qt6QmlVersionlessAliasTargets.cmake \
+	/usr/lib64/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in \
 	/usr/lib64/cmake/Qt6QmlIntegration/Qt6QmlIntegrationAdditionalTargetInfo.cmake \
 	/usr/lib64/cmake/Qt6QmlIntegration/Qt6QmlIntegrationConfig.cmake \
 	/usr/lib64/cmake/Qt6QmlIntegration/Qt6QmlIntegrationConfigVersion.cmake \
@@ -1254,74 +1209,6 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/lib64/cmake/Qt6QuickTools/Qt6QuickToolsTargetsPrecheck.cmake \
 	/usr/lib64/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake \
 	/usr/lib64/cmake/Qt6QuickTools/Qt6SvgToQmlMacros.cmake \
-	/usr/lib64/cmake/Qt6QuickWidgets/Qt6QuickWidgetsAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6QuickWidgets/Qt6QuickWidgetsConfig.cmake \
-	/usr/lib64/cmake/Qt6QuickWidgets/Qt6QuickWidgetsConfigVersion.cmake \
-	/usr/lib64/cmake/Qt6QuickWidgets/Qt6QuickWidgetsConfigVersionImpl.cmake \
-	/usr/lib64/cmake/Qt6QuickWidgets/Qt6QuickWidgetsDependencies.cmake \
-	/usr/lib64/cmake/Qt6QuickWidgets/Qt6QuickWidgetsTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6QuickWidgets/Qt6QuickWidgetsTargets.cmake \
-	/usr/lib64/cmake/Qt6QuickWidgets/Qt6QuickWidgetsTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6QuickWidgets/Qt6QuickWidgetsVersionlessAliasTargets.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelConfig.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelConfigVersion.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelConfigVersionImpl.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelDependencies.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelExtras.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelTargets.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6WebChannel/Qt6WebChannelVersionlessAliasTargets.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreConfig.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreConfigVersion.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreConfigVersionImpl.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreDependencies.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreExtraProperties.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreMacros.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreTargets.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCore/Qt6WebEngineCoreVersionlessAliasTargets.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsConfig.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsConfigVersion.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsConfigVersionImpl.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsDependencies.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsTargets.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6WebEngineCoreTools/Qt6WebEngineCoreToolsVersionlessTargets.cmake \
-	/usr/lib64/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsConfig.cmake \
-	/usr/lib64/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsConfigVersion.cmake \
-	/usr/lib64/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsConfigVersionImpl.cmake \
-	/usr/lib64/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsDependencies.cmake \
-	/usr/lib64/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsTargets.cmake \
-	/usr/lib64/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6WebEngineWidgets/Qt6WebEngineWidgetsVersionlessAliasTargets.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake \
-	/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake \
-	/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake \
-	/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake \
-	/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake \
-	/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake \
-	/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake \
-	/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
-	/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake \
-	/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
 	/usr/share/cmake/Modules/CMakeCXXInformation.cmake \
 	/usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake \
@@ -1338,7 +1225,6 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
 	/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake \
 	/usr/share/cmake/Modules/Compiler/GNU.cmake \
-	/usr/share/cmake/Modules/FindCups.cmake \
 	/usr/share/cmake/Modules/FindOpenGL.cmake \
 	/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
 	/usr/share/cmake/Modules/FindPackageMessage.cmake \

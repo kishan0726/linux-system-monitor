@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/LinuxSystemMonitor">/home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor</file>
+
+  </qresource>
+</RCC>

@@ -1,0 +1,1 @@
+/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/include/../6YEA5652QU/moc_cpu_monitor.cpp.json

@@ -130,6 +130,214 @@ linux-system-monitor/fast:
 .PHONY : linux-system-monitor/fast
 
 #=============================================================================
+# Target rules for targets named linux-system-monitor_qmltyperegistration
+
+# Build rule for target.
+linux-system-monitor_qmltyperegistration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linux-system-monitor_qmltyperegistration
+.PHONY : linux-system-monitor_qmltyperegistration
+
+# fast build rule for target.
+linux-system-monitor_qmltyperegistration/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor_qmltyperegistration.dir/build.make CMakeFiles/linux-system-monitor_qmltyperegistration.dir/build
+.PHONY : linux-system-monitor_qmltyperegistration/fast
+
+#=============================================================================
+# Target rules for targets named all_qmltyperegistrations
+
+# Build rule for target.
+all_qmltyperegistrations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all_qmltyperegistrations
+.PHONY : all_qmltyperegistrations
+
+# fast build rule for target.
+all_qmltyperegistrations/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmltyperegistrations.dir/build.make CMakeFiles/all_qmltyperegistrations.dir/build
+.PHONY : all_qmltyperegistrations/fast
+
+#=============================================================================
+# Target rules for targets named linux-system-monitor_qmllint
+
+# Build rule for target.
+linux-system-monitor_qmllint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linux-system-monitor_qmllint
+.PHONY : linux-system-monitor_qmllint
+
+# fast build rule for target.
+linux-system-monitor_qmllint/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor_qmllint.dir/build.make CMakeFiles/linux-system-monitor_qmllint.dir/build
+.PHONY : linux-system-monitor_qmllint/fast
+
+#=============================================================================
+# Target rules for targets named linux-system-monitor_qmllint_json
+
+# Build rule for target.
+linux-system-monitor_qmllint_json: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linux-system-monitor_qmllint_json
+.PHONY : linux-system-monitor_qmllint_json
+
+# fast build rule for target.
+linux-system-monitor_qmllint_json/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor_qmllint_json.dir/build.make CMakeFiles/linux-system-monitor_qmllint_json.dir/build
+.PHONY : linux-system-monitor_qmllint_json/fast
+
+#=============================================================================
+# Target rules for targets named linux-system-monitor_qmllint_module
+
+# Build rule for target.
+linux-system-monitor_qmllint_module: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linux-system-monitor_qmllint_module
+.PHONY : linux-system-monitor_qmllint_module
+
+# fast build rule for target.
+linux-system-monitor_qmllint_module/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor_qmllint_module.dir/build.make CMakeFiles/linux-system-monitor_qmllint_module.dir/build
+.PHONY : linux-system-monitor_qmllint_module/fast
+
+#=============================================================================
+# Target rules for targets named all_qmllint
+
+# Build rule for target.
+all_qmllint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all_qmllint
+.PHONY : all_qmllint
+
+# fast build rule for target.
+all_qmllint/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmllint.dir/build.make CMakeFiles/all_qmllint.dir/build
+.PHONY : all_qmllint/fast
+
+#=============================================================================
+# Target rules for targets named all_qmllint_json
+
+# Build rule for target.
+all_qmllint_json: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all_qmllint_json
+.PHONY : all_qmllint_json
+
+# fast build rule for target.
+all_qmllint_json/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmllint_json.dir/build.make CMakeFiles/all_qmllint_json.dir/build
+.PHONY : all_qmllint_json/fast
+
+#=============================================================================
+# Target rules for targets named all_qmllint_module
+
+# Build rule for target.
+all_qmllint_module: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all_qmllint_module
+.PHONY : all_qmllint_module
+
+# fast build rule for target.
+all_qmllint_module/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_qmllint_module.dir/build.make CMakeFiles/all_qmllint_module.dir/build
+.PHONY : all_qmllint_module/fast
+
+#=============================================================================
+# Target rules for targets named dump_qml_context_properties
+
+# Build rule for target.
+dump_qml_context_properties: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dump_qml_context_properties
+.PHONY : dump_qml_context_properties
+
+# fast build rule for target.
+dump_qml_context_properties/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dump_qml_context_properties.dir/build.make CMakeFiles/dump_qml_context_properties.dir/build
+.PHONY : dump_qml_context_properties/fast
+
+#=============================================================================
+# Target rules for targets named clean_qml_context_properties
+
+# Build rule for target.
+clean_qml_context_properties: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean_qml_context_properties
+.PHONY : clean_qml_context_properties
+
+# fast build rule for target.
+clean_qml_context_properties/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_qml_context_properties.dir/build.make CMakeFiles/clean_qml_context_properties.dir/build
+.PHONY : clean_qml_context_properties/fast
+
+#=============================================================================
+# Target rules for targets named linux-system-monitor_copy_qml
+
+# Build rule for target.
+linux-system-monitor_copy_qml: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linux-system-monitor_copy_qml
+.PHONY : linux-system-monitor_copy_qml
+
+# fast build rule for target.
+linux-system-monitor_copy_qml/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor_copy_qml.dir/build.make CMakeFiles/linux-system-monitor_copy_qml.dir/build
+.PHONY : linux-system-monitor_copy_qml/fast
+
+#=============================================================================
+# Target rules for targets named linux-system-monitor_copy_res
+
+# Build rule for target.
+linux-system-monitor_copy_res: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linux-system-monitor_copy_res
+.PHONY : linux-system-monitor_copy_res
+
+# fast build rule for target.
+linux-system-monitor_copy_res/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor_copy_res.dir/build.make CMakeFiles/linux-system-monitor_copy_res.dir/build
+.PHONY : linux-system-monitor_copy_res/fast
+
+#=============================================================================
+# Target rules for targets named generate_qmlls_build_ini_file
+
+# Build rule for target.
+generate_qmlls_build_ini_file: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 generate_qmlls_build_ini_file
+.PHONY : generate_qmlls_build_ini_file
+
+# fast build rule for target.
+generate_qmlls_build_ini_file/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_qmlls_build_ini_file.dir/build.make CMakeFiles/generate_qmlls_build_ini_file.dir/build
+.PHONY : generate_qmlls_build_ini_file/fast
+
+#=============================================================================
+# Target rules for targets named module_linux-system-monitor_aotstats_target
+
+# Build rule for target.
+module_linux-system-monitor_aotstats_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 module_linux-system-monitor_aotstats_target
+.PHONY : module_linux-system-monitor_aotstats_target
+
+# fast build rule for target.
+module_linux-system-monitor_aotstats_target/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_linux-system-monitor_aotstats_target.dir/build.make CMakeFiles/module_linux-system-monitor_aotstats_target.dir/build
+.PHONY : module_linux-system-monitor_aotstats_target/fast
+
+#=============================================================================
+# Target rules for targets named all_aotstats
+
+# Build rule for target.
+all_aotstats: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all_aotstats
+.PHONY : all_aotstats
+
+# fast build rule for target.
+all_aotstats/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/all_aotstats.dir/build.make CMakeFiles/all_aotstats.dir/build
+.PHONY : all_aotstats/fast
+
+#=============================================================================
+# Target rules for targets named linux-system-monitor_qmlimportscan
+
+# Build rule for target.
+linux-system-monitor_qmlimportscan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linux-system-monitor_qmlimportscan
+.PHONY : linux-system-monitor_qmlimportscan
+
+# fast build rule for target.
+linux-system-monitor_qmlimportscan/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor_qmlimportscan.dir/build.make CMakeFiles/linux-system-monitor_qmlimportscan.dir/build
+.PHONY : linux-system-monitor_qmlimportscan/fast
+
+#=============================================================================
 # Target rules for targets named linux-system-monitor_autogen_timestamp_deps
 
 # Build rule for target.
@@ -155,6 +363,126 @@ linux-system-monitor_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor_autogen.dir/build.make CMakeFiles/linux-system-monitor_autogen.dir/build
 .PHONY : linux-system-monitor_autogen/fast
 
+build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.o: build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o
+.PHONY : build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.o
+
+# target to build an object file
+build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o
+.PHONY : build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o
+
+build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.i: build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.i
+.PHONY : build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.i
+
+# target to preprocess a source file
+build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.i
+.PHONY : build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.i
+
+build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.s: build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.s
+.PHONY : build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.s
+
+# target to generate assembly for a file
+build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.s
+.PHONY : build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.s
+
+build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.o: build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o
+.PHONY : build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.o
+
+# target to build an object file
+build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o
+.PHONY : build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o
+
+build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.i: build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.i
+.PHONY : build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.i
+
+# target to preprocess a source file
+build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.i
+.PHONY : build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.i
+
+build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.s: build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.s
+.PHONY : build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.s
+
+# target to generate assembly for a file
+build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.s
+.PHONY : build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.s
+
+build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.o: build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o
+
+build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.i: build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.i
+
+build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.s: build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.s
+
+build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.o: build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o
+
+build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.i: build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.i
+
+build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.s: build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.s
+
+build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.o: build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.o
+
+# target to build an object file
+build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o
+
+build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.i: build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.i
+
+build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.s: build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.s
+
 linux-system-monitor_autogen/mocs_compilation.o: linux-system-monitor_autogen/mocs_compilation.cpp.o
 .PHONY : linux-system-monitor_autogen/mocs_compilation.o
 
@@ -178,6 +506,54 @@ linux-system-monitor_autogen/mocs_compilation.s: linux-system-monitor_autogen/mo
 linux-system-monitor_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/linux-system-monitor_autogen/mocs_compilation.cpp.s
 .PHONY : linux-system-monitor_autogen/mocs_compilation.cpp.s
+
+linux-system-monitor_qmltyperegistrations.o: linux-system-monitor_qmltyperegistrations.cpp.o
+.PHONY : linux-system-monitor_qmltyperegistrations.o
+
+# target to build an object file
+linux-system-monitor_qmltyperegistrations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o
+.PHONY : linux-system-monitor_qmltyperegistrations.cpp.o
+
+linux-system-monitor_qmltyperegistrations.i: linux-system-monitor_qmltyperegistrations.cpp.i
+.PHONY : linux-system-monitor_qmltyperegistrations.i
+
+# target to preprocess a source file
+linux-system-monitor_qmltyperegistrations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.i
+.PHONY : linux-system-monitor_qmltyperegistrations.cpp.i
+
+linux-system-monitor_qmltyperegistrations.s: linux-system-monitor_qmltyperegistrations.cpp.s
+.PHONY : linux-system-monitor_qmltyperegistrations.s
+
+# target to generate assembly for a file
+linux-system-monitor_qmltyperegistrations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.s
+.PHONY : linux-system-monitor_qmltyperegistrations.cpp.s
+
+src/cpu_monitor.o: src/cpu_monitor.cpp.o
+.PHONY : src/cpu_monitor.o
+
+# target to build an object file
+src/cpu_monitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.o
+.PHONY : src/cpu_monitor.cpp.o
+
+src/cpu_monitor.i: src/cpu_monitor.cpp.i
+.PHONY : src/cpu_monitor.i
+
+# target to preprocess a source file
+src/cpu_monitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.i
+.PHONY : src/cpu_monitor.cpp.i
+
+src/cpu_monitor.s: src/cpu_monitor.cpp.s
+.PHONY : src/cpu_monitor.s
+
+# target to generate assembly for a file
+src/cpu_monitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.s
+.PHONY : src/cpu_monitor.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -203,30 +579,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/monitor.o: src/monitor.cpp.o
-.PHONY : src/monitor.o
-
-# target to build an object file
-src/monitor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/monitor.cpp.o
-.PHONY : src/monitor.cpp.o
-
-src/monitor.i: src/monitor.cpp.i
-.PHONY : src/monitor.i
-
-# target to preprocess a source file
-src/monitor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/monitor.cpp.i
-.PHONY : src/monitor.cpp.i
-
-src/monitor.s: src/monitor.cpp.s
-.PHONY : src/monitor.s
-
-# target to generate assembly for a file
-src/monitor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/monitor.cpp.s
-.PHONY : src/monitor.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -235,18 +587,52 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... all_aotstats"
+	@echo "... all_qmllint"
+	@echo "... all_qmllint_json"
+	@echo "... all_qmllint_module"
+	@echo "... all_qmltyperegistrations"
+	@echo "... clean_qml_context_properties"
+	@echo "... dump_qml_context_properties"
+	@echo "... generate_qmlls_build_ini_file"
 	@echo "... linux-system-monitor_autogen"
 	@echo "... linux-system-monitor_autogen_timestamp_deps"
+	@echo "... linux-system-monitor_copy_qml"
+	@echo "... linux-system-monitor_copy_res"
+	@echo "... linux-system-monitor_qmlimportscan"
+	@echo "... linux-system-monitor_qmllint"
+	@echo "... linux-system-monitor_qmllint_json"
+	@echo "... linux-system-monitor_qmllint_module"
+	@echo "... linux-system-monitor_qmltyperegistration"
+	@echo "... module_linux-system-monitor_aotstats_target"
 	@echo "... linux-system-monitor"
+	@echo "... build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.o"
+	@echo "... build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.i"
+	@echo "... build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.s"
+	@echo "... build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.o"
+	@echo "... build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.i"
+	@echo "... build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.s"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.o"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.i"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.s"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.o"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.i"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.s"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.o"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.i"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.s"
 	@echo "... linux-system-monitor_autogen/mocs_compilation.o"
 	@echo "... linux-system-monitor_autogen/mocs_compilation.i"
 	@echo "... linux-system-monitor_autogen/mocs_compilation.s"
+	@echo "... linux-system-monitor_qmltyperegistrations.o"
+	@echo "... linux-system-monitor_qmltyperegistrations.i"
+	@echo "... linux-system-monitor_qmltyperegistrations.s"
+	@echo "... src/cpu_monitor.o"
+	@echo "... src/cpu_monitor.i"
+	@echo "... src/cpu_monitor.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/monitor.o"
-	@echo "... src/monitor.i"
-	@echo "... src/monitor.s"
 .PHONY : help
 
 

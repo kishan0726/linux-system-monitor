@@ -70,7 +70,7 @@ CMakeFiles/linux-system-monitor_autogen: linux-system-monitor_autogen/timestamp
 
 linux-system-monitor_autogen/timestamp: /usr/lib64/qt6/libexec/moc
 linux-system-monitor_autogen/timestamp: CMakeFiles/linux-system-monitor_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target linux-system-monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target linux-system-monitor"
 	/usr/bin/cmake -E cmake_autogen /home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles/linux-system-monitor_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/timestamp
 
