@@ -192,10 +192,80 @@ CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kishan/Documents/Projects/linux-system-monitor/src/cpu_monitor.cpp -o CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.s
 
+CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
+CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o: /home/kishan/Documents/Projects/linux-system-monitor/src/memory_monitor.cpp
+CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o -MF CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/src/memory_monitor.cpp
+
+CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kishan/Documents/Projects/linux-system-monitor/src/memory_monitor.cpp > CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.i
+
+CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kishan/Documents/Projects/linux-system-monitor/src/memory_monitor.cpp -o CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.s
+
+CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
+CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o: /home/kishan/Documents/Projects/linux-system-monitor/src/disk_monitor.cpp
+CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o -MF CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/src/disk_monitor.cpp
+
+CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kishan/Documents/Projects/linux-system-monitor/src/disk_monitor.cpp > CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.i
+
+CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kishan/Documents/Projects/linux-system-monitor/src/disk_monitor.cpp -o CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.s
+
+CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
+CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o: /home/kishan/Documents/Projects/linux-system-monitor/src/gpu_monitor.cpp
+CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o -MF CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/src/gpu_monitor.cpp
+
+CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kishan/Documents/Projects/linux-system-monitor/src/gpu_monitor.cpp > CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.i
+
+CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kishan/Documents/Projects/linux-system-monitor/src/gpu_monitor.cpp -o CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.s
+
+CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
+CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o: /home/kishan/Documents/Projects/linux-system-monitor/src/network_monitor.cpp
+CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o -MF CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/src/network_monitor.cpp
+
+CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kishan/Documents/Projects/linux-system-monitor/src/network_monitor.cpp > CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.i
+
+CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kishan/Documents/Projects/linux-system-monitor/src/network_monitor.cpp -o CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.s
+
+CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
+CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o: /home/kishan/Documents/Projects/linux-system-monitor/src/process_monitor.cpp
+CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o -MF CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/src/process_monitor.cpp
+
+CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kishan/Documents/Projects/linux-system-monitor/src/process_monitor.cpp > CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.i
+
+CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kishan/Documents/Projects/linux-system-monitor/src/process_monitor.cpp -o CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.s
+
 CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
 CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o: linux-system-monitor_qmltyperegistrations.cpp
 CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o -MF CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_qmltyperegistrations.cpp
 
 CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.i: cmake_force
@@ -209,7 +279,7 @@ CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cp
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o: .qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o -MF CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp
 
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.i: cmake_force
@@ -223,7 +293,7 @@ CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.c
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o: .rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o -MF CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp
 
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.i: cmake_force
@@ -237,7 +307,7 @@ CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o: .rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o -MF CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp
 
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.i: cmake_force
@@ -251,7 +321,7 @@ CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o: .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o -MF CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp
 
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.i: cmake_force
@@ -265,7 +335,7 @@ CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o: CMakeFiles/linux-system-monitor.dir/flags.make
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o: .qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o: CMakeFiles/linux-system-monitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o -MF CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o.d -o CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o -c /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp
 
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.i: cmake_force
@@ -281,6 +351,11 @@ linux__system__monitor_OBJECTS = \
 "CMakeFiles/linux-system-monitor.dir/linux-system-monitor_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/linux-system-monitor.dir/src/main.cpp.o" \
 "CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.o" \
+"CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o" \
+"CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o" \
+"CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o" \
+"CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o" \
+"CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o" \
 "CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o" \
 "CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o" \
 "CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o" \
@@ -294,6 +369,11 @@ linux__system__monitor_EXTERNAL_OBJECTS =
 linux-system-monitor: CMakeFiles/linux-system-monitor.dir/linux-system-monitor_autogen/mocs_compilation.cpp.o
 linux-system-monitor: CMakeFiles/linux-system-monitor.dir/src/main.cpp.o
 linux-system-monitor: CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.o
+linux-system-monitor: CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o
+linux-system-monitor: CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o
+linux-system-monitor: CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o
+linux-system-monitor: CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o
+linux-system-monitor: CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o
 linux-system-monitor: CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o
 linux-system-monitor: CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o
 linux-system-monitor: CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o
@@ -311,7 +391,7 @@ linux-system-monitor: /usr/lib64/libQt6Qml.so.6.11.2
 linux-system-monitor: /usr/lib64/libQt6Network.so.6.11.2
 linux-system-monitor: /usr/lib64/libQt6Core.so.6.11.2
 linux-system-monitor: CMakeFiles/linux-system-monitor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable linux-system-monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable linux-system-monitor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linux-system-monitor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

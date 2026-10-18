@@ -8,8 +8,18 @@
  /home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles/4.3.0/CMakeSystem.cmake
  /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/moc_predefs.h
  /home/kishan/Documents/Projects/linux-system-monitor/include/cpu_monitor.h
+ /home/kishan/Documents/Projects/linux-system-monitor/include/disk_monitor.h
+ /home/kishan/Documents/Projects/linux-system-monitor/include/gpu_monitor.h
+ /home/kishan/Documents/Projects/linux-system-monitor/include/memory_monitor.h
+ /home/kishan/Documents/Projects/linux-system-monitor/include/network_monitor.h
+ /home/kishan/Documents/Projects/linux-system-monitor/include/process_monitor.h
  /home/kishan/Documents/Projects/linux-system-monitor/src/cpu_monitor.cpp
+ /home/kishan/Documents/Projects/linux-system-monitor/src/disk_monitor.cpp
+ /home/kishan/Documents/Projects/linux-system-monitor/src/gpu_monitor.cpp
  /home/kishan/Documents/Projects/linux-system-monitor/src/main.cpp
+ /home/kishan/Documents/Projects/linux-system-monitor/src/memory_monitor.cpp
+ /home/kishan/Documents/Projects/linux-system-monitor/src/network_monitor.cpp
+ /home/kishan/Documents/Projects/linux-system-monitor/src/process_monitor.cpp
  /usr/bin/cmake
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h

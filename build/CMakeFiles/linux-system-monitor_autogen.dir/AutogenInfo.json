@@ -1166,6 +1166,36 @@
 			"MU",
 			"6YEA5652QU/moc_cpu_monitor.cpp",
 			null
+		],
+		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/include/disk_monitor.h",
+			"MU",
+			"6YEA5652QU/moc_disk_monitor.cpp",
+			null
+		],
+		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/include/gpu_monitor.h",
+			"MU",
+			"6YEA5652QU/moc_gpu_monitor.cpp",
+			null
+		],
+		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/include/memory_monitor.h",
+			"MU",
+			"6YEA5652QU/moc_memory_monitor.cpp",
+			null
+		],
+		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/include/network_monitor.h",
+			"MU",
+			"6YEA5652QU/moc_network_monitor.cpp",
+			null
+		],
+		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/include/process_monitor.h",
+			"MU",
+			"6YEA5652QU/moc_process_monitor.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -1256,7 +1286,32 @@
 			null
 		],
 		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/src/disk_monitor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/src/gpu_monitor.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/kishan/Documents/Projects/linux-system-monitor/src/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/src/memory_monitor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/src/network_monitor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/kishan/Documents/Projects/linux-system-monitor/src/process_monitor.cpp",
 			"MU",
 			null
 		]

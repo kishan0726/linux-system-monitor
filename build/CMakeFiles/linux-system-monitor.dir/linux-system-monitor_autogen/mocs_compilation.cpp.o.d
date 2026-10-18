@@ -313,4 +313,14 @@ CMakeFiles/linux-system-monitor.dir/linux-system-monitor_autogen/mocs_compilatio
  /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtCore/QString \
  /usr/include/qt6/QtCore/qtmochelpers.h \
  /usr/include/qt6/QtCore/qtmocconstants.h \
- /usr/include/qt6/QtCore/q20algorithm.h
+ /usr/include/qt6/QtCore/q20algorithm.h \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/moc_disk_monitor.cpp \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/../../../include/disk_monitor.h \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/moc_gpu_monitor.cpp \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/../../../include/gpu_monitor.h \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/moc_memory_monitor.cpp \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/../../../include/memory_monitor.h \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/moc_network_monitor.cpp \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/../../../include/network_monitor.h \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/moc_process_monitor.cpp \
+ /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/../../../include/process_monitor.h

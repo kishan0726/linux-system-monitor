@@ -137,14 +137,14 @@ ApplicationWindow {
                 }
 
                 Text {
-                    text: "LIVE DATA: NOT CONNECTED"
+                    text: "LIVE DATA: CPU / MEMORY"
                     color: window.muted
                     font.pixelSize: 9
                     font.letterSpacing: 1
                 }
             }
 
-            // SIX COMPACT METRIC CARDS
+            // SIX RESOURCE CARDS
             GridLayout {
                 Layout.fillWidth: true
                 columns: pageScroll.availableWidth < 650 ? 2 : 3
@@ -163,17 +163,21 @@ ApplicationWindow {
                 MetricCard {
                     Layout.fillWidth: true
                     title: "MEMORY"
-                    value: "-- GB"
-                    detail: "RAM in use"
+                    value: memoryMonitor.usedGB.toFixed(1) + " GB"
+                    detail: memoryMonitor.usage.toFixed(1) + "% RAM in use"
                     symbol: "RAM"
                     accent: window.blue
                 }
-
+                
                 MetricCard {
                     Layout.fillWidth: true
                     title: "GPU"
-                    value: "-- %"
-                    detail: "Graphics utilization"
+                    value: gpuMonitor.available
+                           ? gpuMonitor.usage.toFixed(0) + "%"
+                           : "-- %"
+                    detail: gpuMonitor.available
+                            ? gpuMonitor.name
+                            : "GPU unavailable"
                     symbol: "GPU"
                     accent: window.purple
                 }
@@ -181,8 +185,11 @@ ApplicationWindow {
                 MetricCard {
                     Layout.fillWidth: true
                     title: "DISK"
-                    value: "-- %"
-                    detail: "Root storage used"
+                    value: diskMonitor.usage.toFixed(1) + "%"
+                    detail: diskMonitor.usedGB.toFixed(1)
+                            + " / "
+                            + diskMonitor.totalGB.toFixed(1)
+                            + " GB used"
                     symbol: "SSD"
                     accent: window.amber
                 }
@@ -190,8 +197,14 @@ ApplicationWindow {
                 MetricCard {
                     Layout.fillWidth: true
                     title: "NETWORK"
-                    value: "-- MB/s"
-                    detail: "Download / upload"
+                    value: networkMonitor.available
+                           ? networkMonitor.downloadMBps.toFixed(2) + " MB/s"
+                           : "-- MB/s"
+                    detail: networkMonitor.available
+                            ? "↓ " + networkMonitor.downloadMBps.toFixed(2)
+                              + " / ↑ " + networkMonitor.uploadMBps.toFixed(2)
+                              + " MB/s"
+                            : "Network unavailable"
                     symbol: "NET"
                     accent: window.green
                 }
@@ -199,14 +212,14 @@ ApplicationWindow {
                 MetricCard {
                     Layout.fillWidth: true
                     title: "PROCESSES"
-                    value: "---"
+                    value: String(processMonitor.processCount)
                     detail: "Active processes"
                     symbol: "PID"
                     accent: window.blue
                 }
             }
 
-            // CHARTS
+            // CPU AND MEMORY CHARTS
             GridLayout {
                 Layout.fillWidth: true
                 columns: pageScroll.availableWidth < 700 ? 1 : 2
@@ -219,19 +232,20 @@ ApplicationWindow {
                     subtitle: "Processor activity over time"
                     accent: window.cyan
                     samples: cpuMonitor.history
-                    chartMode: 0
+                    emptyMessage: "Collecting CPU samples"
                 }
 
                 ChartPanel {
                     Layout.fillWidth: true
                     title: "Memory utilization"
                     subtitle: "RAM pressure over time"
-                    accent: window.blue
-                    chartMode: 1
+                    accent: window.purple
+                    samples: memoryMonitor.history
+                    emptyMessage: "Collecting memory samples"
                 }
             }
 
-            // DETAILS + PROCESS TABLE
+            // SYSTEM DETAILS AND PROCESS TABLE
             GridLayout {
                 Layout.fillWidth: true
                 columns: pageScroll.availableWidth < 850 ? 1 : 2
@@ -278,21 +292,38 @@ ApplicationWindow {
                         }
 
                         DetailRow {
-                            label: "Available RAM"
-                            value: "N/A"
+                            label: "Total RAM"
+                            value: memoryMonitor.totalGB.toFixed(1) + " GB"
                             accent: window.blue
                         }
 
                         DetailRow {
-                            label: "GPU temperature"
-                            value: "N/A"
+                            label: "Used RAM"
+                            value: memoryMonitor.usedGB.toFixed(1) + " GB"
                             accent: window.purple
                         }
 
                         DetailRow {
-                            label: "Network interface"
-                            value: "N/A"
-                            accent: window.green
+                            label: "Available RAM"
+                            value: memoryMonitor.availableGB.toFixed(1) + " GB"
+                            accent: window.blue
+                        }
+  
+                        DetailRow {
+                            label: "GPU temperature"
+                            value: gpuMonitor.available
+                                   ? gpuMonitor.temperature.toFixed(1) + " °C"
+                                   : "N/A"
+                            accent: window.purple
+                        }
+              
+                        DetailRow {
+                            label: "GPU memory"
+                            value: gpuMonitor.available
+                                   ? (gpuMonitor.usedVRAM / 1024).toFixed(2) + " / "
+                                     + (gpuMonitor.totalVRAM / 1024).toFixed(2) + " GiB"
+                                   : "N/A"
+                            accent: window.purple
                         }
 
                         Item {
@@ -315,7 +346,7 @@ ApplicationWindow {
                             Layout.fillWidth: true
 
                             Text {
-                                text: "TOP PROCESSES"
+                                text: "TOP PROCESSES (" + processMonitor.processCount + ")"
                                 color: window.foreground
                                 font.pixelSize: 13
                                 font.bold: true
@@ -374,27 +405,59 @@ ApplicationWindow {
                             }
                         }
 
-                        Item {
+                        ColumnLayout {
                             Layout.fillWidth: true
                             Layout.fillHeight: true
+                            spacing: 8
 
-                            ColumnLayout {
-                                anchors.centerIn: parent
-                                spacing: 8
+                            Repeater {
+                                model: processMonitor.processes
 
-                                Text {
-                                    Layout.alignment: Qt.AlignHCenter
-                                    text: "No process data yet"
-                                    color: window.foreground
-                                    font.pixelSize: 12
+                                delegate: RowLayout {
+                                    required property var modelData
+                                    Layout.fillWidth: true
+                                    spacing: 8
+
+                                    Text {
+                                        Layout.fillWidth: true
+                                        text: modelData.name
+                                        color: window.foreground
+                                        font.pixelSize: 11
+                                        elide: Text.ElideRight
+                                    }
+
+                                    Text {
+                                        width: 48
+                                        text: String(modelData.pid)
+                                        color: window.muted
+                                        font.pixelSize: 10
+                                        horizontalAlignment: Text.AlignRight
+                                    }
+
+                                    Text {
+                                        width: 48
+                                        text: Number(modelData.cpu).toFixed(1) + "%"
+                                        color: window.cyan
+                                        font.pixelSize: 10
+                                        horizontalAlignment: Text.AlignRight
+                                    }
+
+                                    Text {
+                                        width: 60
+                                        text: Number(modelData.memoryMB).toFixed(1) + " MB"
+                                        color: window.blue
+                                        font.pixelSize: 10
+                                        horizontalAlignment: Text.AlignRight
+                                    }
                                 }
+                            }
 
-                                Text {
-                                    Layout.alignment: Qt.AlignHCenter
-                                    text: "The process collector will populate this table."
-                                    color: window.muted
-                                    font.pixelSize: 10
-                                }
+                            Text {
+                                Layout.alignment: Qt.AlignHCenter
+                                visible: processMonitor.processes.length === 0
+                                text: "Waiting for process data..."
+                                color: window.muted
+                                font.pixelSize: 10
                             }
                         }
                     }
@@ -413,6 +476,7 @@ ApplicationWindow {
         }
     }
 
+    // REUSABLE PANEL
     component Panel: Rectangle {
         color: window.panel
         radius: 12
@@ -420,6 +484,7 @@ ApplicationWindow {
         border.width: 1
     }
 
+    // REUSABLE RESOURCE CARD
     component MetricCard: Rectangle {
         property string title: ""
         property string value: "--"
@@ -492,6 +557,7 @@ ApplicationWindow {
         }
     }
 
+    // REUSABLE DETAIL ROW
     component DetailRow: RowLayout {
         property string label: ""
         property string value: ""
@@ -515,11 +581,13 @@ ApplicationWindow {
         }
     }
 
+    // REUSABLE CHART PANEL
     component ChartPanel: Rectangle {
         property string title: ""
         property string subtitle: ""
         property color accent: "#7de2d1"
-        property int chartMode: 0
+        property var samples: []
+        property string emptyMessage: "Collecting samples"
 
         Layout.minimumWidth: 0
         implicitHeight: 220
@@ -528,8 +596,6 @@ ApplicationWindow {
         radius: 12
         border.color: window.border
         border.width: 1
-
-        property var samples: []
 
         ColumnLayout {
             anchors.fill: parent
@@ -555,7 +621,7 @@ ApplicationWindow {
 
                 lineColor: parent.parent.accent
                 samples: parent.parent.samples
-                emptyMessage: "Collecting CPU samples"
+                emptyMessage: parent.parent.emptyMessage
             }
         }
     }

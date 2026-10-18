@@ -555,6 +555,54 @@ src/cpu_monitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.s
 .PHONY : src/cpu_monitor.cpp.s
 
+src/disk_monitor.o: src/disk_monitor.cpp.o
+.PHONY : src/disk_monitor.o
+
+# target to build an object file
+src/disk_monitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o
+.PHONY : src/disk_monitor.cpp.o
+
+src/disk_monitor.i: src/disk_monitor.cpp.i
+.PHONY : src/disk_monitor.i
+
+# target to preprocess a source file
+src/disk_monitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.i
+.PHONY : src/disk_monitor.cpp.i
+
+src/disk_monitor.s: src/disk_monitor.cpp.s
+.PHONY : src/disk_monitor.s
+
+# target to generate assembly for a file
+src/disk_monitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.s
+.PHONY : src/disk_monitor.cpp.s
+
+src/gpu_monitor.o: src/gpu_monitor.cpp.o
+.PHONY : src/gpu_monitor.o
+
+# target to build an object file
+src/gpu_monitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o
+.PHONY : src/gpu_monitor.cpp.o
+
+src/gpu_monitor.i: src/gpu_monitor.cpp.i
+.PHONY : src/gpu_monitor.i
+
+# target to preprocess a source file
+src/gpu_monitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.i
+.PHONY : src/gpu_monitor.cpp.i
+
+src/gpu_monitor.s: src/gpu_monitor.cpp.s
+.PHONY : src/gpu_monitor.s
+
+# target to generate assembly for a file
+src/gpu_monitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.s
+.PHONY : src/gpu_monitor.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -578,6 +626,78 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/memory_monitor.o: src/memory_monitor.cpp.o
+.PHONY : src/memory_monitor.o
+
+# target to build an object file
+src/memory_monitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o
+.PHONY : src/memory_monitor.cpp.o
+
+src/memory_monitor.i: src/memory_monitor.cpp.i
+.PHONY : src/memory_monitor.i
+
+# target to preprocess a source file
+src/memory_monitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.i
+.PHONY : src/memory_monitor.cpp.i
+
+src/memory_monitor.s: src/memory_monitor.cpp.s
+.PHONY : src/memory_monitor.s
+
+# target to generate assembly for a file
+src/memory_monitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.s
+.PHONY : src/memory_monitor.cpp.s
+
+src/network_monitor.o: src/network_monitor.cpp.o
+.PHONY : src/network_monitor.o
+
+# target to build an object file
+src/network_monitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o
+.PHONY : src/network_monitor.cpp.o
+
+src/network_monitor.i: src/network_monitor.cpp.i
+.PHONY : src/network_monitor.i
+
+# target to preprocess a source file
+src/network_monitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.i
+.PHONY : src/network_monitor.cpp.i
+
+src/network_monitor.s: src/network_monitor.cpp.s
+.PHONY : src/network_monitor.s
+
+# target to generate assembly for a file
+src/network_monitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.s
+.PHONY : src/network_monitor.cpp.s
+
+src/process_monitor.o: src/process_monitor.cpp.o
+.PHONY : src/process_monitor.o
+
+# target to build an object file
+src/process_monitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o
+.PHONY : src/process_monitor.cpp.o
+
+src/process_monitor.i: src/process_monitor.cpp.i
+.PHONY : src/process_monitor.i
+
+# target to preprocess a source file
+src/process_monitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.i
+.PHONY : src/process_monitor.cpp.i
+
+src/process_monitor.s: src/process_monitor.cpp.s
+.PHONY : src/process_monitor.s
+
+# target to generate assembly for a file
+src/process_monitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.s
+.PHONY : src/process_monitor.cpp.s
 
 # Help Target
 help:
@@ -630,9 +750,24 @@ help:
 	@echo "... src/cpu_monitor.o"
 	@echo "... src/cpu_monitor.i"
 	@echo "... src/cpu_monitor.s"
+	@echo "... src/disk_monitor.o"
+	@echo "... src/disk_monitor.i"
+	@echo "... src/disk_monitor.s"
+	@echo "... src/gpu_monitor.o"
+	@echo "... src/gpu_monitor.i"
+	@echo "... src/gpu_monitor.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/memory_monitor.o"
+	@echo "... src/memory_monitor.i"
+	@echo "... src/memory_monitor.s"
+	@echo "... src/network_monitor.o"
+	@echo "... src/network_monitor.i"
+	@echo "... src/network_monitor.s"
+	@echo "... src/process_monitor.o"
+	@echo "... src/process_monitor.i"
+	@echo "... src/process_monitor.s"
 .PHONY : help
 
 

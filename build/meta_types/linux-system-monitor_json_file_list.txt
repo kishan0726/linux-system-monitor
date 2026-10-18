@@ -1,1 +1,6 @@
 /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/include/../6YEA5652QU/moc_cpu_monitor.cpp.json
+/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/include/../6YEA5652QU/moc_disk_monitor.cpp.json
+/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/include/../6YEA5652QU/moc_gpu_monitor.cpp.json
+/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/include/../6YEA5652QU/moc_memory_monitor.cpp.json
+/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/include/../6YEA5652QU/moc_network_monitor.cpp.json
+/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/include/../6YEA5652QU/moc_process_monitor.cpp.json

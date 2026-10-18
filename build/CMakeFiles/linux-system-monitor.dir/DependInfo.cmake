@@ -16,7 +16,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/mocs_compilation.cpp" "CMakeFiles/linux-system-monitor.dir/linux-system-monitor_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/linux-system-monitor.dir/linux-system-monitor_autogen/mocs_compilation.cpp.o.d"
   "/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_qmltyperegistrations.cpp" "CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o" "gcc" "CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o.d"
   "/home/kishan/Documents/Projects/linux-system-monitor/src/cpu_monitor.cpp" "CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.o" "gcc" "CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.o.d"
+  "/home/kishan/Documents/Projects/linux-system-monitor/src/disk_monitor.cpp" "CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o" "gcc" "CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o.d"
+  "/home/kishan/Documents/Projects/linux-system-monitor/src/gpu_monitor.cpp" "CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o" "gcc" "CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o.d"
   "/home/kishan/Documents/Projects/linux-system-monitor/src/main.cpp" "CMakeFiles/linux-system-monitor.dir/src/main.cpp.o" "gcc" "CMakeFiles/linux-system-monitor.dir/src/main.cpp.o.d"
+  "/home/kishan/Documents/Projects/linux-system-monitor/src/memory_monitor.cpp" "CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o" "gcc" "CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o.d"
+  "/home/kishan/Documents/Projects/linux-system-monitor/src/network_monitor.cpp" "CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o" "gcc" "CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o.d"
+  "/home/kishan/Documents/Projects/linux-system-monitor/src/process_monitor.cpp" "CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o" "gcc" "CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o.d"
   "" "linux-system-monitor" "gcc" "CMakeFiles/linux-system-monitor.dir/link.d"
   )
 

@@ -14,6 +14,16 @@ qt_add_executable(linux-system-monitor
     src/main.cpp
     src/cpu_monitor.cpp
     include/cpu_monitor.h
+    src/memory_monitor.cpp
+    include/memory_monitor.h
+    include/disk_monitor.h
+    src/disk_monitor.cpp
+    include/gpu_monitor.h
+    src/gpu_monitor.cpp
+    include/network_monitor.h
+    src/network_monitor.cpp
+    include/process_monitor.h
+    src/process_monitor.cpp
 )
 
 qt_add_qml_module(linux-system-monitor

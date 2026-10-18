@@ -5,6 +5,11 @@ linux-system-monitor: \
   CMakeFiles/linux-system-monitor.dir/linux-system-monitor_autogen/mocs_compilation.cpp.o \
   CMakeFiles/linux-system-monitor.dir/src/main.cpp.o \
   CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o \
   CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o \
@@ -137,6 +142,16 @@ CMakeFiles/linux-system-monitor.dir/linux-system-monitor_autogen/mocs_compilatio
 CMakeFiles/linux-system-monitor.dir/src/main.cpp.o:
 
 CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.o:
+
+CMakeFiles/linux-system-monitor.dir/src/memory_monitor.cpp.o:
+
+CMakeFiles/linux-system-monitor.dir/src/disk_monitor.cpp.o:
+
+CMakeFiles/linux-system-monitor.dir/src/gpu_monitor.cpp.o:
+
+CMakeFiles/linux-system-monitor.dir/src/network_monitor.cpp.o:
+
+CMakeFiles/linux-system-monitor.dir/src/process_monitor.cpp.o:
 
 CMakeFiles/linux-system-monitor.dir/linux-system-monitor_qmltyperegistrations.cpp.o:
 
