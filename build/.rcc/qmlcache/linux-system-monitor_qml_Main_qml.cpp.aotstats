@@ -7,10 +7,26 @@
                     "entries": [
                         {
                             "codegenResult": 2,
+                            "column": 5,
+                            "durationMicroseconds": 0,
+                            "functionName": "openDetails",
+                            "line": 32,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 5,
+                            "durationMicroseconds": 0,
+                            "functionName": "detailsForSection",
+                            "line": 37,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
+                            "codegenResult": 2,
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "contentWidth",
-                            "line": 34,
+                            "line": 89,
                             "message": "Could not find property \"contentWidth\"."
                         },
                         {
@@ -18,7 +34,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 31,
+                            "line": 86,
                             "message": "Could not find property \"fill\"."
                         },
                         {
@@ -26,7 +42,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 37,
+                            "line": 92,
                             "message": "Cannot retrieve a non-object type by ID: pageScroll"
                         },
                         {
@@ -34,7 +50,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 44,
+                            "line": 99,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -42,7 +58,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 46,
+                            "line": 101,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -50,7 +66,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 49,
+                            "line": 104,
                             "message": ""
                         },
                         {
@@ -58,23 +74,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 63,
-                            "message": "Cannot retrieve a non-object type by ID: window"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 47,
-                            "durationMicroseconds": 0,
-                            "functionName": "centerIn",
-                            "line": 61,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 36,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 74,
+                            "line": 114,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -82,7 +82,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 81,
+                            "line": 121,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -90,7 +90,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 96,
+                            "line": 136,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -98,7 +98,7 @@
                             "column": 50,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 98,
+                            "line": 138,
                             "message": ""
                         },
                         {
@@ -106,7 +106,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 99,
+                            "line": 139,
                             "message": ""
                         },
                         {
@@ -114,7 +114,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "alignment",
-                            "line": 104,
+                            "line": 144,
                             "message": ""
                         },
                         {
@@ -122,7 +122,7 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 110,
+                            "line": 150,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -130,7 +130,7 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 115,
+                            "line": 155,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -138,7 +138,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 130,
+                            "line": 170,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -146,7 +146,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 141,
+                            "line": 181,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -154,7 +154,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "columns",
-                            "line": 150,
+                            "line": 190,
                             "message": "Cannot retrieve a non-object type by ID: pageScroll"
                         },
                         {
@@ -162,7 +162,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 157,
+                            "line": 197,
                             "message": "Cannot access value for name cpuMonitor"
                         },
                         {
@@ -170,7 +170,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "detail",
-                            "line": 158,
+                            "line": 198,
                             "message": "Cannot access value for name cpuMonitor"
                         },
                         {
@@ -178,96 +178,24 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 160,
-                            "message": "Cannot retrieve a non-object type by ID: window"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 166,
-                            "message": "Cannot access value for name memoryMonitor"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 29,
-                            "durationMicroseconds": 0,
-                            "functionName": "detail",
-                            "line": 167,
-                            "message": "Cannot access value for name memoryMonitor"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 29,
-                            "durationMicroseconds": 0,
-                            "functionName": "accent",
-                            "line": 169,
-                            "message": "Cannot retrieve a non-object type by ID: window"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 175,
-                            "message": "Cannot access value for name gpuMonitor"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 29,
-                            "durationMicroseconds": 0,
-                            "functionName": "detail",
-                            "line": 178,
-                            "message": "Cannot access value for name gpuMonitor"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 29,
-                            "durationMicroseconds": 0,
-                            "functionName": "accent",
-                            "line": 182,
-                            "message": "Cannot retrieve a non-object type by ID: window"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "value",
-                            "line": 188,
-                            "message": "Cannot access value for name diskMonitor"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 29,
-                            "durationMicroseconds": 0,
-                            "functionName": "detail",
-                            "line": 189,
-                            "message": "Cannot access value for name diskMonitor"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 29,
-                            "durationMicroseconds": 0,
-                            "functionName": "accent",
-                            "line": 194,
-                            "message": "Cannot retrieve a non-object type by ID: window"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "value",
                             "line": 200,
-                            "message": "Cannot access value for name networkMonitor"
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "value",
+                            "line": 206,
+                            "message": "Cannot access value for name memoryMonitor"
                         },
                         {
                             "codegenResult": 2,
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "detail",
-                            "line": 203,
-                            "message": "Cannot access value for name networkMonitor"
+                            "line": 207,
+                            "message": "Cannot access value for name memoryMonitor"
                         },
                         {
                             "codegenResult": 2,
@@ -283,6 +211,78 @@
                             "durationMicroseconds": 0,
                             "functionName": "value",
                             "line": 215,
+                            "message": "Cannot access value for name gpuMonitor"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "detail",
+                            "line": 218,
+                            "message": "Cannot access value for name gpuMonitor"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "accent",
+                            "line": 222,
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "value",
+                            "line": 228,
+                            "message": "Cannot access value for name diskMonitor"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "detail",
+                            "line": 229,
+                            "message": "Cannot access value for name diskMonitor"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "accent",
+                            "line": 234,
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "value",
+                            "line": 240,
+                            "message": "Cannot access value for name networkMonitor"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "detail",
+                            "line": 243,
+                            "message": "Cannot access value for name networkMonitor"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "accent",
+                            "line": 249,
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "value",
+                            "line": 255,
                             "message": "Cannot access value for name processMonitor"
                         },
                         {
@@ -290,7 +290,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 218,
+                            "line": 258,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -298,7 +298,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "columns",
-                            "line": 225,
+                            "line": 265,
                             "message": "Cannot retrieve a non-object type by ID: pageScroll"
                         },
                         {
@@ -306,7 +306,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 233,
+                            "line": 273,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -314,7 +314,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "samples",
-                            "line": 234,
+                            "line": 274,
                             "message": "Cannot access value for name cpuMonitor"
                         },
                         {
@@ -322,7 +322,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 242,
+                            "line": 282,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -330,7 +330,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "samples",
-                            "line": 243,
+                            "line": 283,
                             "message": "Cannot access value for name memoryMonitor"
                         },
                         {
@@ -338,7 +338,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "columns",
-                            "line": 251,
+                            "line": 291,
                             "message": "Cannot retrieve a non-object type by ID: pageScroll"
                         },
                         {
@@ -346,7 +346,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 261,
+                            "line": 301,
                             "message": ""
                         },
                         {
@@ -354,7 +354,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 267,
+                            "line": 307,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -362,7 +362,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 275,
+                            "line": 315,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -370,7 +370,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 280,
+                            "line": 320,
                             "message": "Cannot access value for name cpuMonitor"
                         },
                         {
@@ -378,7 +378,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 283,
+                            "line": 323,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -386,7 +386,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 288,
+                            "line": 328,
                             "message": "Cannot access value for name cpuMonitor"
                         },
                         {
@@ -394,7 +394,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 291,
+                            "line": 331,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -402,7 +402,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 296,
+                            "line": 336,
                             "message": "Cannot access value for name memoryMonitor"
                         },
                         {
@@ -410,7 +410,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 297,
+                            "line": 337,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -418,7 +418,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 302,
+                            "line": 342,
                             "message": "Cannot access value for name memoryMonitor"
                         },
                         {
@@ -426,7 +426,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 303,
+                            "line": 343,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -434,7 +434,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 308,
+                            "line": 348,
                             "message": "Cannot access value for name memoryMonitor"
                         },
                         {
@@ -442,7 +442,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 309,
+                            "line": 349,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -450,7 +450,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 314,
+                            "line": 354,
                             "message": "Cannot access value for name gpuMonitor"
                         },
                         {
@@ -458,7 +458,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 317,
+                            "line": 357,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -466,7 +466,7 @@
                             "column": 36,
                             "durationMicroseconds": 0,
                             "functionName": "value",
-                            "line": 322,
+                            "line": 362,
                             "message": "Cannot access value for name gpuMonitor"
                         },
                         {
@@ -474,7 +474,7 @@
                             "column": 37,
                             "durationMicroseconds": 0,
                             "functionName": "accent",
-                            "line": 326,
+                            "line": 366,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -482,7 +482,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 341,
+                            "line": 381,
                             "message": ""
                         },
                         {
@@ -490,7 +490,7 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 349,
+                            "line": 389,
                             "message": "Cannot access value for name processMonitor"
                         },
                         {
@@ -498,7 +498,7 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 350,
+                            "line": 390,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -506,7 +506,7 @@
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 361,
+                            "line": 401,
                             "message": "Cannot retrieve a non-object type by ID: window"
                         },
                         {
@@ -514,7 +514,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 373,
+                            "line": 414,
                             "message": ""
                         },
                         {
@@ -522,39 +522,95 @@
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 381,
+                            "line": 423,
                             "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 56,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 425,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 388,
+                            "line": 432,
                             "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 58,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 434,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 56,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 435,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 395,
+                            "line": 442,
                             "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 58,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 444,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 56,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 445,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 44,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 402,
+                            "line": 452,
                             "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 58,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 454,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 56,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 455,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 40,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 414,
+                            "line": 466,
                             "message": "Cannot access value for name processMonitor"
                         },
                         {
@@ -562,7 +618,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 423,
+                            "line": 476,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -570,7 +626,7 @@
                             "column": 48,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 424,
+                            "line": 477,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -578,7 +634,15 @@
                             "column": 48,
                             "durationMicroseconds": 0,
                             "functionName": "elide",
-                            "line": 426,
+                            "line": 479,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 60,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 480,
                             "message": ""
                         },
                         {
@@ -586,7 +650,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 431,
+                            "line": 486,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -594,7 +658,7 @@
                             "column": 48,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 432,
+                            "line": 487,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -602,7 +666,15 @@
                             "column": 62,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 434,
+                            "line": 489,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 60,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 490,
                             "message": ""
                         },
                         {
@@ -610,7 +682,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 439,
+                            "line": 496,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -618,7 +690,7 @@
                             "column": 48,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 440,
+                            "line": 497,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -626,7 +698,15 @@
                             "column": 62,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 442,
+                            "line": 499,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 60,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 500,
                             "message": ""
                         },
                         {
@@ -634,7 +714,7 @@
                             "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 447,
+                            "line": 506,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -642,7 +722,7 @@
                             "column": 48,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 448,
+                            "line": 507,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -650,95 +730,239 @@
                             "column": 62,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 450,
+                            "line": 509,
                             "message": ""
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 42,
+                            "codegenResult": 0,
+                            "column": 60,
                             "durationMicroseconds": 0,
-                            "functionName": "visible",
-                            "line": 457,
-                            "message": "Cannot access value for name processMonitor"
+                            "functionName": "verticalAlignment",
+                            "line": 510,
+                            "message": ""
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 40,
+                            "codegenResult": 0,
+                            "column": 37,
                             "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 459,
-                            "message": "Cannot retrieve a non-object type by ID: window"
+                            "functionName": "implicitHeight",
+                            "line": 527,
+                            "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 51,
                             "durationMicroseconds": 0,
-                            "functionName": "alignment",
-                            "line": 456,
+                            "functionName": "horizontalCenter",
+                            "line": 531,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 38,
+                            "column": 49,
                             "durationMicroseconds": 0,
-                            "functionName": "horizontalAlignment",
-                            "line": 474,
+                            "functionName": "verticalCenter",
+                            "line": 532,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 16,
+                            "column": 36,
                             "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 481,
-                            "message": "Cannot access value for name window"
+                            "functionName": "model",
+                            "line": 539,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 23,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 483,
-                            "message": "Cannot access value for name window"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 16,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 498,
-                            "message": "Cannot access value for name window"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 23,
-                            "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 500,
-                            "message": "Cannot access value for name window"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 27,
-                            "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 504,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 27,
+                            "column": 47,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 512,
-                            "message": "Cannot access value for name title"
+                            "line": 561,
+                            "message": "Cannot access value for name modelData"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 59,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 560,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
+                            "column": 43,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 569,
+                            "message": "Cannot access value for name modelData"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 56,
+                            "durationMicroseconds": 0,
+                            "functionName": "verticalAlignment",
+                            "line": 573,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "context",
+                            "line": 586,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "onActivated",
+                            "line": 587,
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "context",
+                            "line": 591,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "onActivated",
+                            "line": 592,
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "context",
+                            "line": 596,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "onActivated",
+                            "line": 597,
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "context",
+                            "line": 601,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "onActivated",
+                            "line": 602,
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "context",
+                            "line": 606,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "onActivated",
+                            "line": 607,
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "context",
+                            "line": 611,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "onActivated",
+                            "line": 612,
+                            "message": "Cannot retrieve a non-object type by ID: window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 17,
+                            "durationMicroseconds": 0,
+                            "functionName": "parent",
+                            "line": 617,
+                            "message": "Could not find property \"parent\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 619,
+                            "message": "Could not find property \"width\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "title",
+                            "line": 621,
+                            "message": "Could not find property \"title\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "standardButtons",
+                            "line": 622,
+                            "message": "Could not find property \"standardButtons\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 618,
+                            "message": "Could not find property \"centerIn\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 513,
+                            "line": 625,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 627,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "model",
+                            "line": 635,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -746,7 +970,127 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 531,
+                            "line": 644,
+                            "message": "Cannot access value for name modelData"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 645,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 650,
+                            "message": "Cannot access value for name modelData"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 651,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 46,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalAlignment",
+                            "line": 654,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 661,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 663,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "wrapMode",
+                            "line": 664,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 672,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 674,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 689,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 691,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 695,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 703,
+                            "message": "Cannot access value for name title"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 704,
+                            "message": "Cannot access value for name window"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 722,
                             "message": "Cannot access value for name symbol"
                         },
                         {
@@ -754,7 +1098,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 532,
+                            "line": 723,
                             "message": "Cannot access value for name accent"
                         },
                         {
@@ -762,7 +1106,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 530,
+                            "line": 721,
                             "message": ""
                         },
                         {
@@ -770,7 +1114,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 540,
+                            "line": 731,
                             "message": "Cannot access value for name value"
                         },
                         {
@@ -778,7 +1122,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 541,
+                            "line": 732,
                             "message": "Cannot access value for name accent"
                         },
                         {
@@ -786,7 +1130,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 548,
+                            "line": 739,
                             "message": "Cannot access value for name detail"
                         },
                         {
@@ -794,7 +1138,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 549,
+                            "line": 740,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -802,7 +1146,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "elide",
-                            "line": 551,
+                            "line": 742,
                             "message": ""
                         },
                         {
@@ -810,7 +1154,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 571,
+                            "line": 762,
                             "message": "Cannot access value for name label"
                         },
                         {
@@ -818,7 +1162,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 572,
+                            "line": 763,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -826,7 +1170,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 577,
+                            "line": 768,
                             "message": "Cannot access value for name value"
                         },
                         {
@@ -834,7 +1178,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 578,
+                            "line": 769,
                             "message": "Cannot access value for name accent"
                         },
                         {
@@ -842,7 +1186,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "samples",
-                            "line": 589,
+                            "line": 780,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
                         },
                         {
@@ -850,7 +1194,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 595,
+                            "line": 786,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -858,7 +1202,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 597,
+                            "line": 788,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -866,7 +1210,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 601,
+                            "line": 792,
                             "message": ""
                         },
                         {
@@ -874,7 +1218,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 606,
+                            "line": 797,
                             "message": "Cannot access value for name title"
                         },
                         {
@@ -882,7 +1226,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 607,
+                            "line": 798,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -890,7 +1234,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 613,
+                            "line": 804,
                             "message": "Cannot access value for name subtitle"
                         },
                         {
@@ -898,7 +1242,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 614,
+                            "line": 805,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -906,7 +1250,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "lineColor",
-                            "line": 622,
+                            "line": 813,
                             "message": "Cannot load property accent from QQuickItem::parent with type QQuickItem."
                         },
                         {
@@ -914,7 +1258,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "samples",
-                            "line": 623,
+                            "line": 814,
                             "message": "Cannot load property samples from QQuickItem::parent with type QQuickItem."
                         },
                         {
@@ -922,7 +1266,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "emptyMessage",
-                            "line": 624,
+                            "line": 815,
                             "message": "Cannot load property emptyMessage from QQuickItem::parent with type QQuickItem."
                         }
                     ],

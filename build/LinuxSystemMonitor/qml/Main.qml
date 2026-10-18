@@ -26,6 +26,61 @@ ApplicationWindow {
     property color amber: "#e7bd87"
     property color green: "#9be3a5"
 
+    // Selected hardware section shown in the details dialog.
+    property string selectedSection: ""
+
+    function openDetails(section) {
+        selectedSection = section
+        detailsDialog.open()
+    }
+
+    function detailsForSection(section) {
+        switch (section) {
+        case "CPU":
+            return [
+                { label: "CPU usage", value: cpuMonitor.usage.toFixed(1) + "%" },
+                { label: "Temperature", value: cpuMonitor.temperature > 0 ? cpuMonitor.temperature.toFixed(1) + " °C" : "N/A" },
+                { label: "Frequency", value: cpuMonitor.frequency > 0 ? cpuMonitor.frequency.toFixed(0) + " MHz" : "N/A" },
+                { label: "Logical cores", value: String(cpuMonitor.coreCount) }
+            ]
+        case "GPU":
+            return [
+                { label: "GPU", value: gpuMonitor.available ? gpuMonitor.name : "Unavailable" },
+                { label: "Utilization", value: gpuMonitor.available ? gpuMonitor.usage.toFixed(1) + "%" : "N/A" },
+                { label: "Temperature", value: gpuMonitor.available ? gpuMonitor.temperature.toFixed(1) + " °C" : "N/A" },
+                { label: "VRAM used", value: gpuMonitor.available ? (gpuMonitor.usedVRAM / 1024).toFixed(2) + " GiB" : "N/A" },
+                { label: "Total VRAM", value: gpuMonitor.available ? (gpuMonitor.totalVRAM / 1024).toFixed(2) + " GiB" : "N/A" }
+            ]
+        case "MEMORY":
+            return [
+                { label: "Usage", value: memoryMonitor.usage.toFixed(1) + "%" },
+                { label: "Total RAM", value: memoryMonitor.totalGB.toFixed(2) + " GB" },
+                { label: "Used RAM", value: memoryMonitor.usedGB.toFixed(2) + " GB" },
+                { label: "Available RAM", value: memoryMonitor.availableGB.toFixed(2) + " GB" }
+            ]
+        case "DISK":
+            return [
+                { label: "Usage", value: diskMonitor.usage.toFixed(1) + "%" },
+                { label: "Total capacity", value: diskMonitor.totalGB.toFixed(2) + " GB" },
+                { label: "Used space", value: diskMonitor.usedGB.toFixed(2) + " GB" },
+                { label: "Free space", value: diskMonitor.freeGB.toFixed(2) + " GB" }
+            ]
+        case "NETWORK":
+            return [
+                { label: "Interface", value: networkMonitor.interfaceName },
+                { label: "Download speed", value: networkMonitor.available ? networkMonitor.downloadMBps.toFixed(2) + " MB/s" : "Unavailable" },
+                { label: "Upload speed", value: networkMonitor.available ? networkMonitor.uploadMBps.toFixed(2) + " MB/s" : "Unavailable" }
+            ]
+        case "PROCESSES":
+            return [
+                { label: "Total processes", value: String(processMonitor.processCount) },
+                { label: "Shown in dashboard", value: String(processMonitor.processes.length) }
+            ]
+        default:
+            return []
+        }
+    }
+
     ScrollView {
         id: pageScroll
         anchors.fill: parent
@@ -50,21 +105,6 @@ ApplicationWindow {
                     anchors.margins: 18
                     spacing: 12
 
-                    Rectangle {
-                        width: 40
-                        height: 40
-                        radius: 10
-                        color: "#18302f"
-                        border.color: "#31534e"
-
-                        Text {
-                            anchors.centerIn: parent
-                            text: "S"
-                            color: window.cyan
-                            font.pixelSize: 24
-                            font.bold: true
-                        }
-                    }
 
                     ColumnLayout {
                         spacing: 3
@@ -77,7 +117,7 @@ ApplicationWindow {
                         }
 
                         Text {
-                            text: "HYPRLAND  /  PERFORMANCE OVERVIEW"
+                            text: "PERFORMANCE OVERVIEW"
                             color: window.muted
                             font.pixelSize: 10
                             font.letterSpacing: 1.3
@@ -111,7 +151,7 @@ ApplicationWindow {
                             }
 
                             Text {
-                                text: "UI READY"
+                                text: "Active"
                                 color: window.cyan
                                 font.pixelSize: 11
                                 font.bold: true
@@ -255,7 +295,7 @@ ApplicationWindow {
                 // SYSTEM DETAILS
                 Panel {
                     Layout.fillWidth: true
-                    implicitHeight: 245
+                    implicitHeight: 260
 
                     ColumnLayout {
                         anchors.fill: parent
@@ -265,7 +305,7 @@ ApplicationWindow {
                         Text {
                             text: "SYSTEM DETAILS"
                             color: window.foreground
-                            font.pixelSize: 13
+                            font.pixelSize: 14
                             font.bold: true
                         }
 
@@ -335,7 +375,7 @@ ApplicationWindow {
                 // PROCESS TABLE
                 Panel {
                     Layout.fillWidth: true
-                    implicitHeight: 245
+                    implicitHeight: 260
 
                     ColumnLayout {
                         anchors.fill: parent
@@ -348,7 +388,7 @@ ApplicationWindow {
                             Text {
                                 text: "TOP PROCESSES (" + processMonitor.processCount + ")"
                                 color: window.foreground
-                                font.pixelSize: 13
+                                font.pixelSize: 14
                                 font.bold: true
                             }
 
@@ -359,10 +399,11 @@ ApplicationWindow {
                             Text {
                                 text: "CPU / RAM"
                                 color: window.muted
-                                font.pixelSize: 9
+                                font.pixelSize: 12
                             }
                         }
 
+                        
                         Rectangle {
                             Layout.fillWidth: true
                             height: 32
@@ -377,30 +418,41 @@ ApplicationWindow {
 
                                 Text {
                                     Layout.fillWidth: true
+                                    Layout.minimumWidth: 0
                                     text: "PROCESS"
                                     color: window.muted
-                                    font.pixelSize: 9
+                                    font.pixelSize: 12
+                                    verticalAlignment: Text.AlignVCenter
                                 }
 
                                 Text {
-                                    width: 48
+                                    Layout.preferredWidth: 60
+                                    Layout.minimumWidth: 60
                                     text: "PID"
                                     color: window.muted
-                                    font.pixelSize: 9
+                                    font.pixelSize: 12
+                                    horizontalAlignment: Text.AlignRight
+                                    verticalAlignment: Text.AlignVCenter
                                 }
 
                                 Text {
-                                    width: 48
+                                    Layout.preferredWidth: 60
+                                    Layout.minimumWidth: 60
                                     text: "CPU"
                                     color: window.muted
-                                    font.pixelSize: 9
+                                    font.pixelSize: 12
+                                    horizontalAlignment: Text.AlignRight
+                                    verticalAlignment: Text.AlignVCenter
                                 }
 
                                 Text {
-                                    width: 60
+                                    Layout.preferredWidth: 60
+                                    Layout.minimumWidth: 60
                                     text: "RAM"
                                     color: window.muted
-                                    font.pixelSize: 9
+                                    font.pixelSize: 12
+                                    horizontalAlignment: Text.AlignRight
+                                    verticalAlignment: Text.AlignVCenter
                                 }
                             }
                         }
@@ -420,58 +472,197 @@ ApplicationWindow {
 
                                     Text {
                                         Layout.fillWidth: true
+                                        Layout.minimumWidth: 0
                                         text: modelData.name
                                         color: window.foreground
-                                        font.pixelSize: 11
+                                        font.pixelSize: 13
                                         elide: Text.ElideRight
+                                        verticalAlignment: Text.AlignVCenter
                                     }
 
                                     Text {
-                                        width: 48
+                                        Layout.preferredWidth: 60
+                                        Layout.minimumWidth: 60
                                         text: String(modelData.pid)
                                         color: window.muted
-                                        font.pixelSize: 10
+                                        font.pixelSize: 12
                                         horizontalAlignment: Text.AlignRight
+                                        verticalAlignment: Text.AlignVCenter
                                     }
 
                                     Text {
-                                        width: 48
+                                        Layout.preferredWidth: 60
+                                        Layout.minimumWidth: 60
                                         text: Number(modelData.cpu).toFixed(1) + "%"
                                         color: window.cyan
-                                        font.pixelSize: 10
+                                        font.pixelSize: 12
                                         horizontalAlignment: Text.AlignRight
+                                        verticalAlignment: Text.AlignVCenter
                                     }
 
                                     Text {
-                                        width: 60
+                                        Layout.preferredWidth: 60
+                                        Layout.minimumWidth: 60
                                         text: Number(modelData.memoryMB).toFixed(1) + " MB"
                                         color: window.blue
-                                        font.pixelSize: 10
+                                        font.pixelSize: 12
                                         horizontalAlignment: Text.AlignRight
+                                        verticalAlignment: Text.AlignVCenter
                                     }
                                 }
-                            }
-
-                            Text {
-                                Layout.alignment: Qt.AlignHCenter
-                                visible: processMonitor.processes.length === 0
-                                text: "Waiting for process data..."
-                                color: window.muted
-                                font.pixelSize: 10
                             }
                         }
                     }
                 }
             }
 
+            ColumnLayout {
+                Layout.fillWidth: true
+                Layout.topMargin: 10
+                Layout.bottomMargin: 10
+                spacing: 8
+
+                Item {
+                    Layout.fillWidth: true
+                    implicitHeight: shortcuts.implicitHeight
+
+                    GridLayout {
+                        id: shortcuts
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.verticalCenter: parent.verticalCenter
+
+                        columns: 6
+                        rowSpacing: 8
+                        columnSpacing: 20
+
+                        Repeater {
+                            model: [
+                                { key: "Ctrl + C", label: "CPU" },
+                                { key: "Ctrl + G", label: "GPU" },
+                                { key: "Ctrl + M", label: "MEMORY" },
+                                { key: "Ctrl + D", label: "DISK" },
+                                { key: "Ctrl + N", label: "NETWORK" },
+                                { key: "Ctrl + P", label: "PROCESS" }
+                            ]
+
+                            delegate: RowLayout {
+                                required property var modelData
+                                spacing: 6
+
+                                Rectangle {
+                                    Layout.preferredWidth: 66
+                                    Layout.preferredHeight: 24
+                                    radius: 4
+                                    color: "#19232d"
+                                    border.color: "#344451"
+
+                                    Text {
+                                        anchors.centerIn: parent
+                                        text: modelData.key
+                                        color: "#7dd3fc"
+                                        font.pixelSize: 12
+                                        font.bold: true
+                                    }
+                                }
+
+                                Text {
+                                    text: modelData.label
+                                    color: "#8495a3"
+                                    font.pixelSize: 12
+                                    font.letterSpacing: 0.5
+                                    verticalAlignment: Text.AlignVCenter
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Hardware keyboard shortcuts. These are window-level shortcuts.
+    Shortcut {
+        sequence: "Ctrl+C"
+        context: Qt.WindowShortcut
+        onActivated: window.openDetails("CPU")
+    }
+    Shortcut {
+        sequence: "Ctrl+G"
+        context: Qt.WindowShortcut
+        onActivated: window.openDetails("GPU")
+    }
+    Shortcut {
+        sequence: "Ctrl+M"
+        context: Qt.WindowShortcut
+        onActivated: window.openDetails("MEMORY")
+    }
+    Shortcut {
+        sequence: "Ctrl+D"
+        context: Qt.WindowShortcut
+        onActivated: window.openDetails("DISK")
+    }
+    Shortcut {
+        sequence: "Ctrl+N"
+        context: Qt.WindowShortcut
+        onActivated: window.openDetails("NETWORK")
+    }
+    Shortcut {
+        sequence: "Ctrl+P"
+        context: Qt.WindowShortcut
+        onActivated: window.openDetails("PROCESSES")
+    }
+
+    Dialog {
+        id: detailsDialog
+        parent: Overlay.overlay
+        anchors.centerIn: parent
+        width: Math.min(window.width - 40, 480)
+        modal: true
+        title: window.selectedSection + " DETAILS"
+        standardButtons: Dialog.Close
+
+        background: Rectangle {
+            color: window.panel
+            radius: 12
+            border.color: window.border
+        }
+
+        contentItem: ColumnLayout {
+            spacing: 12
+            implicitWidth: 400
+
+            Repeater {
+                model: window.detailsForSection(window.selectedSection)
+
+                delegate: RowLayout {
+                    required property var modelData
+                    Layout.fillWidth: true
+                    spacing: 16
+
+                    Text {
+                        Layout.fillWidth: true
+                        text: modelData.label
+                        color: window.muted
+                        font.pixelSize: 13
+                    }
+
+                    Text {
+                        text: modelData.value
+                        color: window.cyan
+                        font.pixelSize: 13
+                        font.bold: true
+                        horizontalAlignment: Text.AlignRight
+                    }
+                }
+            }
+
             Text {
                 Layout.fillWidth: true
-                Layout.bottomMargin: 10
-                text: "SYS.MON  ·  QT QUICK  ·  LINUX"
-                color: "#566672"
-                font.pixelSize: 9
-                font.letterSpacing: 1.4
-                horizontalAlignment: Text.AlignHCenter
+                visible: window.selectedSection === "PROCESSES"
+                text: "Use the process table on the dashboard to inspect the current top processes."
+                color: window.muted
+                wrapMode: Text.WordWrap
+                font.pixelSize: 11
             }
         }
     }
@@ -605,7 +796,7 @@ ApplicationWindow {
             Text {
                 text: title
                 color: window.foreground
-                font.pixelSize: 13
+                font.pixelSize: 14
                 font.bold: true
             }
 
