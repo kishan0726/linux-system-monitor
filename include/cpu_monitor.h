@@ -6,6 +6,7 @@
 #include <QTimer>
 #include <QVariantList>
 #include <QString>
+#include <QHash>
 
 #include <vector>
 
@@ -19,6 +20,7 @@ class CpuMonitor : public QObject
     Q_PROPERTY(int coreCount READ coreCount NOTIFY updated)
     Q_PROPERTY(QVariantList cores READ cores NOTIFY updated)
     Q_PROPERTY(QVariantList history READ history NOTIFY updated)
+    Q_PROPERTY(QVariantList coreHistory READ coreHistory NOTIFY updated)
 
 public:
     explicit CpuMonitor(QObject *parent = nullptr);
@@ -30,6 +32,7 @@ public:
 
     QVariantList cores() const;
     QVariantList history() const;
+    QVariantList coreHistory() const;
 
 signals:
     void updated();
@@ -71,6 +74,8 @@ private:
 
     QVariantList m_cores;
     QVariantList m_history;
+    QHash<QString, QVariantList> m_perCoreHistory;
+    QVariantList m_coreHistory;
 
     QTimer m_timer;
 };

@@ -4,3 +4,5 @@
 /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/linux-system-monitor_raw_qml_0.qrc
 /qt/qml/LinuxSystemMonitor/qml/Main.qml
 /qt/qml/LinuxSystemMonitor/qml/components/ResourceChart.qml
+/qt/qml/LinuxSystemMonitor/qml/components/MultiSeriesChart.qml
+/qt/qml/LinuxSystemMonitor/qml/pages/CpuDetails.qml

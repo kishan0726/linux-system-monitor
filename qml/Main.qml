@@ -3,6 +3,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import "components"
+import "pages"
 
 ApplicationWindow {
     id: window
@@ -531,7 +532,7 @@ ApplicationWindow {
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter
 
-                        columns: 6
+                        columns: 7
                         rowSpacing: 8
                         columnSpacing: 20
 
@@ -542,7 +543,8 @@ ApplicationWindow {
                                 { key: "Ctrl + M", label: "MEMORY" },
                                 { key: "Ctrl + D", label: "DISK" },
                                 { key: "Ctrl + N", label: "NETWORK" },
-                                { key: "Ctrl + P", label: "PROCESS" }
+                                { key: "Ctrl + P", label: "PROCESS" },
+                                { key: "Ctrl + Q", label: "Quit" }
                             ]
 
                             delegate: RowLayout {
@@ -611,15 +613,21 @@ ApplicationWindow {
         context: Qt.WindowShortcut
         onActivated: window.openDetails("PROCESSES")
     }
+    Shortcut {
+        sequence: "Ctrl+Q"
+        context: Qt.ApplicationShortcut
+        onActivated: Qt.quit()
+    }
 
     Dialog {
         id: detailsDialog
         parent: Overlay.overlay
         anchors.centerIn: parent
-        width: Math.min(window.width - 40, 480)
+        width: ApplicationWindow.window.width - 64
         modal: true
         title: window.selectedSection + " DETAILS"
         standardButtons: Dialog.Close
+        height: ApplicationWindow.window.height - 64
 
         background: Rectangle {
             color: window.panel
@@ -629,9 +637,23 @@ ApplicationWindow {
 
         contentItem: ColumnLayout {
             spacing: 12
-            implicitWidth: 400
+            implicitWidth: window.selectedSection === "CPU" ? 860 : 380
+
+            Loader {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                Layout.preferredHeight: window.selectedSection === "CPU" ? 500 : 0
+                active: window.selectedSection === "CPU"
+                visible: active
+                sourceComponent: Component {
+                    CpuDetails {
+                        monitor: cpuMonitor
+                    }
+                }
+            }
 
             Repeater {
+                visible: window.selectedSection !== "CPU"
                 model: window.detailsForSection(window.selectedSection)
 
                 delegate: RowLayout {

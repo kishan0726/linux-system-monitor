@@ -3,5 +3,7 @@ typeinfo linux-system-monitor.qmltypes
 prefer :/qt/qml/LinuxSystemMonitor/
 Main 1.0 qml/Main.qml
 ResourceChart 1.0 qml/components/ResourceChart.qml
+MultiSeriesChart 1.0 qml/components/MultiSeriesChart.qml
+CpuDetails 1.0 qml/pages/CpuDetails.qml
 depends QtQuick
 

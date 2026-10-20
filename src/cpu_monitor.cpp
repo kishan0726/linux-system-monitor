@@ -81,6 +81,11 @@ QVariantList CpuMonitor::history() const
     return m_history;
 }
 
+QVariantList CpuMonitor::coreHistory() const
+{
+    return m_coreHistory;
+}
+
 std::vector<CpuMonitor::RawCpuStats>
 CpuMonitor::readCPUStats() const
 {
@@ -256,6 +261,7 @@ void CpuMonitor::refresh()
         return;
 
     QVariantList coreValues;
+    QVariantList coreHistoryValues;
 
     for (size_t i = 0; i < current.size(); ++i) {
         double percent = 0.0;
@@ -275,10 +281,23 @@ void CpuMonitor::refresh()
             core["name"] = current[i].name;
             core["usage"] = percent;
             coreValues.append(core);
+
+            QVariantList samples = m_perCoreHistory.value(current[i].name);
+            samples.append(percent);
+            while (samples.size() > 120)
+                samples.removeFirst();
+            m_perCoreHistory.insert(current[i].name, samples);
+
+            QVariantMap historyEntry;
+            historyEntry["name"] = current[i].name;
+            historyEntry["usage"] = percent;
+            historyEntry["history"] = samples;
+            coreHistoryValues.append(historyEntry);
         }
     }
 
     m_cores = coreValues;
+    m_coreHistory = coreHistoryValues;
     m_coreCount = coreValues.size();
 
     m_previousStats = current;

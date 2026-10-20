@@ -354,6 +354,7 @@ CMakeFiles/linux-system-monitor.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qtimer.h /usr/include/qt6/QtCore/QVariantList \
  /usr/include/qt6/QtCore/qvariantlist.h /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QVariant /usr/include/qt6/QtCore/QString \
+ /usr/include/qt6/QtCore/QHash \
  /home/kishan/Documents/Projects/linux-system-monitor/include/memory_monitor.h \
  /home/kishan/Documents/Projects/linux-system-monitor/include/disk_monitor.h \
  /home/kishan/Documents/Projects/linux-system-monitor/include/gpu_monitor.h \

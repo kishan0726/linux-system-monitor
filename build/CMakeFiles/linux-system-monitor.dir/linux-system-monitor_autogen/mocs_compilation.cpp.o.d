@@ -311,7 +311,7 @@ CMakeFiles/linux-system-monitor.dir/linux-system-monitor_autogen/mocs_compilatio
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qalloc.h /usr/include/qt6/QtCore/q23utility.h \
  /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtCore/QString \
- /usr/include/qt6/QtCore/qtmochelpers.h \
+ /usr/include/qt6/QtCore/QHash /usr/include/qt6/QtCore/qtmochelpers.h \
  /usr/include/qt6/QtCore/qtmocconstants.h \
  /usr/include/qt6/QtCore/q20algorithm.h \
  /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_autogen/6YEA5652QU/moc_disk_monitor.cpp \

@@ -1,4 +1,4 @@
-set(qml_import_scanner_imports_count 26)
+set(qml_import_scanner_imports_count 30)
 set(qml_import_scanner_import_0 "CLASSNAME;QtQuick2Plugin;LINKTARGET;Qt6::qtquick2plugin;NAME;QtQuick;PATH;/usr/lib64/qt6/qml/QtQuick;PLUGIN;qtquick2plugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/;RELATIVEPATH;QtQuick;TYPE;module;")
 set(qml_import_scanner_import_1 "CLASSNAME;QtQmlPlugin;LINKTARGET;Qt6::qmlplugin;NAME;QtQml;PATH;/usr/lib64/qt6/qml/QtQml;PLUGIN;qmlplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/;RELATIVEPATH;QtQml;TYPE;module;")
 set(qml_import_scanner_import_2 "NAME;QML;PATH;/usr/lib64/qt6/qml/QML;PREFER;:/qt-project.org/imports/QML/;RELATIVEPATH;QML;TYPE;module;")
@@ -24,5 +24,9 @@ set(qml_import_scanner_import_21 "CLASSNAME;QtQuickLayoutsPlugin;LINKTARGET;Qt6:
 set(qml_import_scanner_import_22 "CLASSNAME;QmlShapesPlugin;LINKTARGET;Qt6::qmlshapesplugin;NAME;QtQuick.Shapes;PATH;/usr/lib64/qt6/qml/QtQuick/Shapes;PLUGIN;qmlshapesplugin;PREFER;:/qt-project.org/imports/QtQuick/Shapes/;RELATIVEPATH;QtQuick/Shapes;TYPE;module;")
 set(qml_import_scanner_import_23 "CLASSNAME;QtQuickControls2BasicStyleImplPlugin;COMPONENTS;/usr/lib64/qt6/qml/QtQuick/Controls/Basic/impl/TextEditingContextMenu.qml;LINKTARGET;Qt6::qtquickcontrols2basicstyleimplplugin;NAME;QtQuick.Controls.Basic.impl;PATH;/usr/lib64/qt6/qml/QtQuick/Controls/Basic/impl;PLUGIN;qtquickcontrols2basicstyleimplplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/Controls/Basic/impl/;RELATIVEPATH;QtQuick/Controls/Basic/impl;TYPE;module;")
 set(qml_import_scanner_import_24 "NAME;components;PATH;/home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qml/components;TYPE;directory;")
-set(qml_import_scanner_import_25 "NAME;components;PATH;/home/kishan/Documents/Projects/linux-system-monitor/qml/components;TYPE;directory;")
+set(qml_import_scanner_import_25 "NAME;pages;PATH;/home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qml/pages;TYPE;directory;")
+set(qml_import_scanner_import_26 "NAME;../components;PATH;/home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qml/components;TYPE;directory;")
+set(qml_import_scanner_import_27 "NAME;components;PATH;/home/kishan/Documents/Projects/linux-system-monitor/qml/components;TYPE;directory;")
+set(qml_import_scanner_import_28 "NAME;pages;PATH;/home/kishan/Documents/Projects/linux-system-monitor/qml/pages;TYPE;directory;")
+set(qml_import_scanner_import_29 "NAME;../components;PATH;/home/kishan/Documents/Projects/linux-system-monitor/qml/components;TYPE;directory;")
 

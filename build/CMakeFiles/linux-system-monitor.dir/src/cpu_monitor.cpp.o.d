@@ -310,8 +310,8 @@ CMakeFiles/linux-system-monitor.dir/src/cpu_monitor.cpp.o: \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qalloc.h /usr/include/qt6/QtCore/q23utility.h \
  /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtCore/QString \
- /usr/include/qt6/QtCore/QDir /usr/include/qt6/QtCore/qdir.h \
- /usr/include/qt6/QtCore/qdirlisting.h \
+ /usr/include/qt6/QtCore/QHash /usr/include/qt6/QtCore/QDir \
+ /usr/include/qt6/QtCore/qdir.h /usr/include/qt6/QtCore/qdirlisting.h \
  /usr/include/qt6/QtCore/qfiledevice.h \
  /usr/include/qt6/QtCore/qiodevice.h /usr/include/qt6/QtCore/qspan.h \
  /usr/include/c++/16/cassert /usr/include/qt6/QtCore/q20iterator.h \

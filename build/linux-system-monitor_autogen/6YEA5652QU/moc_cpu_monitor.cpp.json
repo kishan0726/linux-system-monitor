@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "CpuMonitor",
-            "lineNumber": 12,
+            "lineNumber": 13,
             "object": true,
             "properties": [
                 {
@@ -10,7 +10,7 @@
                     "designable": true,
                     "final": false,
                     "index": 0,
-                    "lineNumber": 16,
+                    "lineNumber": 17,
                     "name": "usage",
                     "notify": "updated",
                     "override": false,
@@ -27,7 +27,7 @@
                     "designable": true,
                     "final": false,
                     "index": 1,
-                    "lineNumber": 17,
+                    "lineNumber": 18,
                     "name": "temperature",
                     "notify": "updated",
                     "override": false,
@@ -44,7 +44,7 @@
                     "designable": true,
                     "final": false,
                     "index": 2,
-                    "lineNumber": 18,
+                    "lineNumber": 19,
                     "name": "frequency",
                     "notify": "updated",
                     "override": false,
@@ -61,7 +61,7 @@
                     "designable": true,
                     "final": false,
                     "index": 3,
-                    "lineNumber": 19,
+                    "lineNumber": 20,
                     "name": "coreCount",
                     "notify": "updated",
                     "override": false,
@@ -78,7 +78,7 @@
                     "designable": true,
                     "final": false,
                     "index": 4,
-                    "lineNumber": 20,
+                    "lineNumber": 21,
                     "name": "cores",
                     "notify": "updated",
                     "override": false,
@@ -95,11 +95,28 @@
                     "designable": true,
                     "final": false,
                     "index": 5,
-                    "lineNumber": 21,
+                    "lineNumber": 22,
                     "name": "history",
                     "notify": "updated",
                     "override": false,
                     "read": "history",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "lineNumber": 23,
+                    "name": "coreHistory",
+                    "notify": "updated",
+                    "override": false,
+                    "read": "coreHistory",
                     "required": false,
                     "scriptable": true,
                     "stored": true,
@@ -113,7 +130,7 @@
                 {
                     "access": "public",
                     "index": 0,
-                    "lineNumber": 35,
+                    "lineNumber": 38,
                     "name": "updated",
                     "returnType": "void"
                 }
@@ -122,7 +139,7 @@
                 {
                     "access": "private",
                     "index": 1,
-                    "lineNumber": 38,
+                    "lineNumber": 41,
                     "name": "refresh",
                     "returnType": "void"
                 }

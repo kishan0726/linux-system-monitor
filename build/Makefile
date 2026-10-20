@@ -435,6 +435,30 @@ build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.s
 .PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.s
 
+build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.o: build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.o
+
+build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.i: build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.i
+
+build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.s: build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.s
+
 build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.o: build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o
 .PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.o
 
@@ -458,6 +482,30 @@ build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.s: bui
 build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.s
 .PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.s
+
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.o: build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.o
+
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.i: build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.i
+
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.s: build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.s
 
 build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.o: build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o
 .PHONY : build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.o
@@ -735,9 +783,15 @@ help:
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.o"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.i"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.s"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.o"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.i"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.s"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.o"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.i"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.s"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.o"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.i"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.s"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.o"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.i"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.s"

@@ -48,7 +48,8 @@ template <> constexpr inline auto CpuMonitor::qt_create_metaobjectdata<qt_meta_t
         "coreCount",
         "cores",
         "QVariantList",
-        "history"
+        "history",
+        "coreHistory"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -70,6 +71,8 @@ template <> constexpr inline auto CpuMonitor::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::PropertyData<QVariantList>(8, 0x80000000 | 9, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
         // property 'history'
         QtMocHelpers::PropertyData<QVariantList>(10, 0x80000000 | 9, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
+        // property 'coreHistory'
+        QtMocHelpers::PropertyData<QVariantList>(11, 0x80000000 | 9, QMC::DefaultPropertyFlags | QMC::EnumOrFlag, 0),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -109,6 +112,7 @@ void CpuMonitor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 3: *reinterpret_cast<int*>(_v) = _t->coreCount(); break;
         case 4: *reinterpret_cast<QVariantList*>(_v) = _t->cores(); break;
         case 5: *reinterpret_cast<QVariantList*>(_v) = _t->history(); break;
+        case 6: *reinterpret_cast<QVariantList*>(_v) = _t->coreHistory(); break;
         default: break;
         }
     }
@@ -146,7 +150,7 @@ int CpuMonitor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 7;
     }
     return _id;
 }

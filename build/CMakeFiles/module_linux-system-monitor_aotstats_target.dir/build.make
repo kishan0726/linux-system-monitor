@@ -70,6 +70,8 @@ CMakeFiles/module_linux-system-monitor_aotstats_target: .rcc/qmlcache/module_lin
 
 .rcc/qmlcache/module_linux-system-monitor.aotstats: .rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.aotstats
 .rcc/qmlcache/module_linux-system-monitor.aotstats: .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.aotstats
+.rcc/qmlcache/module_linux-system-monitor.aotstats: .rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.aotstats
+.rcc/qmlcache/module_linux-system-monitor.aotstats: .rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.aotstats
 .rcc/qmlcache/module_linux-system-monitor.aotstats: .rcc/qmlcache/module_linux-system-monitor.aotstatslist
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/module_linux-system-monitor.aotstats"
 	/usr/lib64/qt6/libexec/qmlaotstats aggregate /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/module_linux-system-monitor.aotstatslist /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/module_linux-system-monitor.aotstats
@@ -87,26 +89,56 @@ CMakeFiles/module_linux-system-monitor_aotstats_target: .rcc/qmlcache/module_lin
 .rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.aotstats: .rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.aotstats
 
+.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp: /usr/lib64/qt6/libexec/qmlcachegen
+.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/MultiSeriesChart.qml
+.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp: .qt/rcc/qmake_LinuxSystemMonitor.qrc
+.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp: .qt/rcc/linux-system-monitor_raw_qml_0.qrc
+.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp: LinuxSystemMonitor/linux-system-monitor.qmltypes
+.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp: LinuxSystemMonitor/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating .rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp, .rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache
+	/usr/lib64/qt6/libexec/qmlcachegen --bare --resource-path /qt/qml/LinuxSystemMonitor/qml/components/MultiSeriesChart.qml -I /home/kishan/Documents/Projects/linux-system-monitor/build -I /usr/lib64/qt6/qml -i /home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qmldir --resource /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qmake_LinuxSystemMonitor.qrc --resource /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/linux-system-monitor_raw_qml_0.qrc --dump-aot-stats "--module-id=LinuxSystemMonitor(linux-system-monitor)" -o /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp /home/kishan/Documents/Projects/linux-system-monitor/qml/components/MultiSeriesChart.qml
+
+.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.aotstats: .rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.aotstats
+
 .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp: /usr/lib64/qt6/libexec/qmlcachegen
 .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/ResourceChart.qml
 .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp: .qt/rcc/qmake_LinuxSystemMonitor.qrc
 .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp: .qt/rcc/linux-system-monitor_raw_qml_0.qrc
 .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp: LinuxSystemMonitor/linux-system-monitor.qmltypes
 .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp: LinuxSystemMonitor/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp, .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.aotstats"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp, .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.aotstats"
 	/usr/bin/cmake -E make_directory /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache
 	/usr/lib64/qt6/libexec/qmlcachegen --bare --resource-path /qt/qml/LinuxSystemMonitor/qml/components/ResourceChart.qml -I /home/kishan/Documents/Projects/linux-system-monitor/build -I /usr/lib64/qt6/qml -i /home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qmldir --resource /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qmake_LinuxSystemMonitor.qrc --resource /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/linux-system-monitor_raw_qml_0.qrc --dump-aot-stats "--module-id=LinuxSystemMonitor(linux-system-monitor)" -o /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp /home/kishan/Documents/Projects/linux-system-monitor/qml/components/ResourceChart.qml
 
 .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.aotstats: .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.aotstats
 
+.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp: /usr/lib64/qt6/libexec/qmlcachegen
+.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/CpuDetails.qml
+.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp: .qt/rcc/qmake_LinuxSystemMonitor.qrc
+.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp: .qt/rcc/linux-system-monitor_raw_qml_0.qrc
+.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp: LinuxSystemMonitor/linux-system-monitor.qmltypes
+.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp: LinuxSystemMonitor/qmldir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating .rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp, .rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.aotstats"
+	/usr/bin/cmake -E make_directory /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache
+	/usr/lib64/qt6/libexec/qmlcachegen --bare --resource-path /qt/qml/LinuxSystemMonitor/qml/pages/CpuDetails.qml -I /home/kishan/Documents/Projects/linux-system-monitor/build -I /usr/lib64/qt6/qml -i /home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qmldir --resource /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qmake_LinuxSystemMonitor.qrc --resource /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/linux-system-monitor_raw_qml_0.qrc --dump-aot-stats "--module-id=LinuxSystemMonitor(linux-system-monitor)" -o /home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/CpuDetails.qml
+
+.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.aotstats: .rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.aotstats
+
 CMakeFiles/module_linux-system-monitor_aotstats_target.dir/codegen:
 .PHONY : CMakeFiles/module_linux-system-monitor_aotstats_target.dir/codegen
 
 module_linux-system-monitor_aotstats_target: .rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp
 module_linux-system-monitor_aotstats_target: .rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.aotstats
+module_linux-system-monitor_aotstats_target: .rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp
+module_linux-system-monitor_aotstats_target: .rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.aotstats
 module_linux-system-monitor_aotstats_target: .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp
 module_linux-system-monitor_aotstats_target: .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.aotstats
+module_linux-system-monitor_aotstats_target: .rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp
+module_linux-system-monitor_aotstats_target: .rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.aotstats
 module_linux-system-monitor_aotstats_target: .rcc/qmlcache/module_linux-system-monitor.aotstats
 module_linux-system-monitor_aotstats_target: CMakeFiles/module_linux-system-monitor_aotstats_target
 module_linux-system-monitor_aotstats_target: CMakeFiles/module_linux-system-monitor_aotstats_target.dir/build.make

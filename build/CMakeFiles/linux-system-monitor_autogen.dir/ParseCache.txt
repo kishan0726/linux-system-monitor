@@ -2285,6 +2285,7 @@
  mdp:/usr/include/linux/types.h
  mdp:/usr/include/locale.h
  mdp:/usr/include/pthread.h
+ mdp:/usr/include/qt6/QtCore/QHash
  mdp:/usr/include/qt6/QtCore/QList
  mdp:/usr/include/qt6/QtCore/QObject
  mdp:/usr/include/qt6/QtCore/QString

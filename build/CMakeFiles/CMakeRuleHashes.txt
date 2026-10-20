@@ -8,7 +8,9 @@ d0a1128f93926b0edfc7183fbd8d9cfb .qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp
 c0e75ab0ac10108837b68a1879d670fc .qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp
 2d96f193941443ca04d1db4da56912cf .rcc/qmlcache/all_aotstats.aotstats
 4d4c00cd930ed634dc0577137f68e076 .rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp
+006e48ed4cd7e7a257dea8d6b503ea2d .rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp
 b2be20dcd306628b60d3eeef8ff4f57a .rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp
+7b6d76aa7f686ac665a72183cfe286f0 .rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp
 d4f6cb682093804670b074b4565d15af .rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp
 53fca84798213f51436354fffab62fc2 .rcc/qmlcache/module_linux-system-monitor.aotstats
 14cab75b506ae984d702c4a3e580e0e9 CMakeFiles/all_aotstats

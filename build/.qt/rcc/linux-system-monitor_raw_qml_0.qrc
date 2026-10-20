@@ -2,6 +2,8 @@
   <qresource prefix="/qt/qml/LinuxSystemMonitor/">
     <file alias="qml/Main.qml">/home/kishan/Documents/Projects/linux-system-monitor/qml/Main.qml</file>
     <file alias="qml/components/ResourceChart.qml">/home/kishan/Documents/Projects/linux-system-monitor/qml/components/ResourceChart.qml</file>
+    <file alias="qml/components/MultiSeriesChart.qml">/home/kishan/Documents/Projects/linux-system-monitor/qml/components/MultiSeriesChart.qml</file>
+    <file alias="qml/pages/CpuDetails.qml">/home/kishan/Documents/Projects/linux-system-monitor/qml/pages/CpuDetails.qml</file>
   </qresource>
 </RCC>
 
