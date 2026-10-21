@@ -15,5 +15,6 @@
 /home/kishan/Documents/Projects/linux-system-monitor/qml/components/ResourceChart.qml
 /home/kishan/Documents/Projects/linux-system-monitor/qml/components/MultiSeriesChart.qml
 /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/CpuDetails.qml
+/home/kishan/Documents/Projects/linux-system-monitor/qml/pages/MemoryDetails.qml
 --json
 /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_qmllint.json

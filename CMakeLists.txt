@@ -34,6 +34,7 @@ qt_add_qml_module(linux-system-monitor
         qml/components/ResourceChart.qml
         qml/components/MultiSeriesChart.qml
         qml/pages/CpuDetails.qml
+        qml/pages/MemoryDetails.qml
 )
 
 target_link_libraries(linux-system-monitor PRIVATE

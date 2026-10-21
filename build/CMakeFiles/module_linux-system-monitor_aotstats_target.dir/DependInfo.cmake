@@ -16,6 +16,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp"
   "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp"
   "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp"
+  "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp"
   )
 
 

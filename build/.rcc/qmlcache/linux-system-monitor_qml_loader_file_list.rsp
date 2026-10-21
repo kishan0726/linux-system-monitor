@@ -6,3 +6,4 @@
 /qt/qml/LinuxSystemMonitor/qml/components/ResourceChart.qml
 /qt/qml/LinuxSystemMonitor/qml/components/MultiSeriesChart.qml
 /qt/qml/LinuxSystemMonitor/qml/pages/CpuDetails.qml
+/qt/qml/LinuxSystemMonitor/qml/pages/MemoryDetails.qml

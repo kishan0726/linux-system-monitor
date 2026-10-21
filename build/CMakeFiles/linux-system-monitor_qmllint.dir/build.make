@@ -71,6 +71,7 @@ CMakeFiles/linux-system-monitor_qmllint: /home/kishan/Documents/Projects/linux-s
 CMakeFiles/linux-system-monitor_qmllint: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/ResourceChart.qml
 CMakeFiles/linux-system-monitor_qmllint: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/MultiSeriesChart.qml
 CMakeFiles/linux-system-monitor_qmllint: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/CpuDetails.qml
+CMakeFiles/linux-system-monitor_qmllint: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/MemoryDetails.qml
 CMakeFiles/linux-system-monitor_qmllint: .rcc/qmllint/linux-system-monitor.rsp
 	cd /home/kishan/Documents/Projects/linux-system-monitor && /usr/lib64/qt6/bin/qmllint @/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmllint/linux-system-monitor.rsp
 

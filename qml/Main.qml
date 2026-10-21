@@ -640,35 +640,66 @@ ApplicationWindow {
             implicitWidth: window.selectedSection === "CPU" ? 860 : 380
 
             Loader {
-                Layout.fillWidth: true
+                id: detailsLoader
+
+             Layout.fillWidth: true
                 Layout.fillHeight: true
-                Layout.preferredHeight: window.selectedSection === "CPU" ? 500 : 0
-                active: window.selectedSection === "CPU"
-                visible: active
-                sourceComponent: Component {
-                    CpuDetails {
-                        monitor: cpuMonitor
-                    }
+                Layout.preferredHeight:
+                    (window.selectedSection === "CPU"
+                     || window.selectedSection === "MEMORY") ? 650 : 0
+
+             active: window.selectedSection === "CPU"
+                        || window.selectedSection === "MEMORY"
+
+             visible: active
+
+             sourceComponent: {
+                    if (window.selectedSection === "CPU")
+                        return cpuDetailsComponent
+
+                 if (window.selectedSection === "MEMORY")
+                        return memoryDetailsComponent
+
+                 return undefined
+                }
+            }
+
+            Component {
+                id: cpuDetailsComponent
+
+             CpuDetails {
+                    monitor: cpuMonitor
+                }
+            }
+
+            Component {
+                id: memoryDetailsComponent
+
+             MemoryDetails {
+                    monitor: memoryMonitor
                 }
             }
 
             Repeater {
                 visible: window.selectedSection !== "CPU"
-                model: window.detailsForSection(window.selectedSection)
+                         && window.selectedSection !== "MEMORY"
 
-                delegate: RowLayout {
+             model: window.detailsForSection(window.selectedSection)
+
+             delegate: RowLayout {
                     required property var modelData
-                    Layout.fillWidth: true
+
+                 Layout.fillWidth: true
                     spacing: 16
 
-                    Text {
+                 Text {
                         Layout.fillWidth: true
                         text: modelData.label
                         color: window.muted
                         font.pixelSize: 13
                     }
 
-                    Text {
+                 Text {
                         text: modelData.value
                         color: window.cyan
                         font.pixelSize: 13

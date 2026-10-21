@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 2,
                             "column": 18,
-                            "durationMicroseconds": 2000,
+                            "durationMicroseconds": 1000,
                             "functionName": "onPaint",
                             "line": 16,
                             "message": "Instruction \"generate_PushBlockContext\" not implemented"
