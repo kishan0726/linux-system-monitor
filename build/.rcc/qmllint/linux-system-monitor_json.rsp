@@ -11,10 +11,15 @@
 /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qmake_LinuxSystemMonitor.qrc
 --resource
 /home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/linux-system-monitor_raw_qml_0.qrc
+--resource
+/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/linux-system-monitor_raw_qml_0_extra_qmldirs.qrc
 /home/kishan/Documents/Projects/linux-system-monitor/qml/Main.qml
 /home/kishan/Documents/Projects/linux-system-monitor/qml/components/ResourceChart.qml
 /home/kishan/Documents/Projects/linux-system-monitor/qml/components/MultiSeriesChart.qml
+/home/kishan/Documents/Projects/linux-system-monitor/qml/components/DiskActivityChart.qml
 /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/CpuDetails.qml
 /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/MemoryDetails.qml
+/home/kishan/Documents/Projects/linux-system-monitor/qml/pages/DiskDetails.qml
+/home/kishan/Documents/Projects/linux-system-monitor/qml/pages/NetworkDetails.qml
 --json
 /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_qmllint.json

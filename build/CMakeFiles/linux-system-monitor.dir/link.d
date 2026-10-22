@@ -16,9 +16,13 @@ linux-system-monitor: \
   CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_DiskActivityChart_qml.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0_extra_qmldirs.cpp.o \
   /usr/lib64/libQt6Quick.so.6.11.2 \
   /usr/lib64/libQt6OpenGL.so.6.11.2 \
   /usr/lib64/libQt6Gui.so.6.11.2 \
@@ -168,11 +172,19 @@ CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml
 
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp.o:
 
+CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_components_DiskActivityChart_qml.cpp.o:
+
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.o:
 
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp.o:
 
+CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp.o:
+
+CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp.o:
+
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o:
+
+CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0_extra_qmldirs.cpp.o:
 
 /usr/lib64/libQt6Quick.so.6.11.2:
 

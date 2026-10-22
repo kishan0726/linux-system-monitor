@@ -286,6 +286,7 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/include/linux/types.h \
 	/usr/include/locale.h \
 	/usr/include/pthread.h \
+	/usr/include/qt6/QtCore/QElapsedTimer \
 	/usr/include/qt6/QtCore/QHash \
 	/usr/include/qt6/QtCore/QList \
 	/usr/include/qt6/QtCore/QObject \
@@ -293,6 +294,7 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/include/qt6/QtCore/QTimer \
 	/usr/include/qt6/QtCore/QVariant \
 	/usr/include/qt6/QtCore/QVariantList \
+	/usr/include/qt6/QtCore/QtGlobal \
 	/usr/include/qt6/QtCore/q17memory.h \
 	/usr/include/qt6/QtCore/q20bit.h \
 	/usr/include/qt6/QtCore/q20functional.h \
@@ -334,6 +336,7 @@ linux-system-monitor_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qdatastream.h \
 	/usr/include/qt6/QtCore/qdeadlinetimer.h \
 	/usr/include/qt6/QtCore/qdebug.h \
+	/usr/include/qt6/QtCore/qelapsedtimer.h \
 	/usr/include/qt6/QtCore/qeventloop.h \
 	/usr/include/qt6/QtCore/qexceptionhandling.h \
 	/usr/include/qt6/QtCore/qflags.h \

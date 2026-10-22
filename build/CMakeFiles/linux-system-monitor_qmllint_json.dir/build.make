@@ -70,8 +70,11 @@ CMakeFiles/linux-system-monitor_qmllint_json: /usr/lib64/qt6/bin/qmllint
 CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/Main.qml
 CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/ResourceChart.qml
 CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/MultiSeriesChart.qml
+CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/DiskActivityChart.qml
 CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/CpuDetails.qml
 CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/MemoryDetails.qml
+CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/DiskDetails.qml
+CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/NetworkDetails.qml
 CMakeFiles/linux-system-monitor_qmllint_json: .rcc/qmllint/linux-system-monitor_json.rsp
 	cd /home/kishan/Documents/Projects/linux-system-monitor && /usr/lib64/qt6/bin/qmllint @/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmllint/linux-system-monitor_json.rsp
 

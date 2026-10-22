@@ -4,7 +4,10 @@ prefer :/qt/qml/LinuxSystemMonitor/
 Main 1.0 qml/Main.qml
 ResourceChart 1.0 qml/components/ResourceChart.qml
 MultiSeriesChart 1.0 qml/components/MultiSeriesChart.qml
+DiskActivityChart 1.0 qml/components/DiskActivityChart.qml
 CpuDetails 1.0 qml/pages/CpuDetails.qml
 MemoryDetails 1.0 qml/pages/MemoryDetails.qml
+DiskDetails 1.0 qml/pages/DiskDetails.qml
+NetworkDetails 1.0 qml/pages/NetworkDetails.qml
 depends QtQuick
 

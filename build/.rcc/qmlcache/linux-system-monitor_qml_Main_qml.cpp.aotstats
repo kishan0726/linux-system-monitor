@@ -983,15 +983,15 @@
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
+                            "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "implicitWidth",
-                            "line": 640,
+                            "line": 641,
                             "message": "Cannot access value for name window"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 22,
+                            "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "active",
                             "line": 651,
@@ -999,18 +999,18 @@
                         },
                         {
                             "codegenResult": 0,
-                            "column": 23,
+                            "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 654,
+                            "line": 656,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 31,
+                            "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "sourceComponent",
-                            "line": 656,
+                            "line": 664,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1018,7 +1018,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "preferredHeight",
-                            "line": 648,
+                            "line": 659,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1026,7 +1026,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "monitor",
-                            "line": 671,
+                            "line": 680,
                             "message": "Cannot access value for name cpuMonitor"
                         },
                         {
@@ -1034,15 +1034,31 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "monitor",
-                            "line": 679,
+                            "line": 687,
                             "message": "Cannot access value for name memoryMonitor"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 40,
+                            "durationMicroseconds": 0,
+                            "functionName": "monitor",
+                            "line": 693,
+                            "message": "Cannot access value for name diskMonitor"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "monitor",
+                            "line": 699,
+                            "message": "Cannot access value for name networkMonitor"
                         },
                         {
                             "codegenResult": 2,
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 684,
+                            "line": 704,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1050,7 +1066,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 687,
+                            "line": 709,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1058,7 +1074,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 697,
+                            "line": 719,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -1066,7 +1082,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 698,
+                            "line": 720,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1074,7 +1090,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 703,
+                            "line": 725,
                             "message": "Cannot access value for name modelData"
                         },
                         {
@@ -1082,7 +1098,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 704,
+                            "line": 726,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1090,7 +1106,7 @@
                             "column": 46,
                             "durationMicroseconds": 0,
                             "functionName": "horizontalAlignment",
-                            "line": 707,
+                            "line": 729,
                             "message": ""
                         },
                         {
@@ -1098,7 +1114,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "visible",
-                            "line": 714,
+                            "line": 736,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1106,7 +1122,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 716,
+                            "line": 738,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1114,7 +1130,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "wrapMode",
-                            "line": 717,
+                            "line": 739,
                             "message": ""
                         },
                         {
@@ -1122,7 +1138,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 725,
+                            "line": 747,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1130,7 +1146,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 727,
+                            "line": 749,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1138,7 +1154,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 742,
+                            "line": 764,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1146,7 +1162,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 744,
+                            "line": 766,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1154,7 +1170,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 748,
+                            "line": 770,
                             "message": ""
                         },
                         {
@@ -1162,7 +1178,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 756,
+                            "line": 778,
                             "message": "Cannot access value for name title"
                         },
                         {
@@ -1170,7 +1186,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 757,
+                            "line": 779,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1178,7 +1194,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 775,
+                            "line": 797,
                             "message": "Cannot access value for name symbol"
                         },
                         {
@@ -1186,7 +1202,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 776,
+                            "line": 798,
                             "message": "Cannot access value for name accent"
                         },
                         {
@@ -1194,7 +1210,7 @@
                             "column": 43,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 774,
+                            "line": 796,
                             "message": ""
                         },
                         {
@@ -1202,7 +1218,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 784,
+                            "line": 806,
                             "message": "Cannot access value for name value"
                         },
                         {
@@ -1210,7 +1226,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 785,
+                            "line": 807,
                             "message": "Cannot access value for name accent"
                         },
                         {
@@ -1218,7 +1234,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 792,
+                            "line": 814,
                             "message": "Cannot access value for name detail"
                         },
                         {
@@ -1226,7 +1242,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 793,
+                            "line": 815,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1234,7 +1250,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "elide",
-                            "line": 795,
+                            "line": 817,
                             "message": ""
                         },
                         {
@@ -1242,7 +1258,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 815,
+                            "line": 837,
                             "message": "Cannot access value for name label"
                         },
                         {
@@ -1250,7 +1266,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 816,
+                            "line": 838,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1258,7 +1274,7 @@
                             "column": 19,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 821,
+                            "line": 843,
                             "message": "Cannot access value for name value"
                         },
                         {
@@ -1266,7 +1282,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 822,
+                            "line": 844,
                             "message": "Cannot access value for name accent"
                         },
                         {
@@ -1274,7 +1290,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "samples",
-                            "line": 833,
+                            "line": 855,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
                         },
                         {
@@ -1282,7 +1298,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 839,
+                            "line": 861,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1290,7 +1306,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 841,
+                            "line": 863,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1298,7 +1314,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 845,
+                            "line": 867,
                             "message": ""
                         },
                         {
@@ -1306,7 +1322,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 850,
+                            "line": 872,
                             "message": "Cannot access value for name title"
                         },
                         {
@@ -1314,7 +1330,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 851,
+                            "line": 873,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1322,7 +1338,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 857,
+                            "line": 879,
                             "message": "Cannot access value for name subtitle"
                         },
                         {
@@ -1330,7 +1346,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "color",
-                            "line": 858,
+                            "line": 880,
                             "message": "Cannot access value for name window"
                         },
                         {
@@ -1338,7 +1354,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "lineColor",
-                            "line": 866,
+                            "line": 888,
                             "message": "Cannot load property accent from QQuickItem::parent with type QQuickItem."
                         },
                         {
@@ -1346,7 +1362,7 @@
                             "column": 26,
                             "durationMicroseconds": 0,
                             "functionName": "samples",
-                            "line": 867,
+                            "line": 889,
                             "message": "Cannot load property samples from QQuickItem::parent with type QQuickItem."
                         },
                         {
@@ -1354,7 +1370,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "emptyMessage",
-                            "line": 868,
+                            "line": 890,
                             "message": "Cannot load property emptyMessage from QQuickItem::parent with type QQuickItem."
                         }
                     ],

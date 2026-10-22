@@ -357,6 +357,9 @@ CMakeFiles/linux-system-monitor.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/QHash \
  /home/kishan/Documents/Projects/linux-system-monitor/include/memory_monitor.h \
  /home/kishan/Documents/Projects/linux-system-monitor/include/disk_monitor.h \
+ /usr/include/qt6/QtCore/QtGlobal \
  /home/kishan/Documents/Projects/linux-system-monitor/include/gpu_monitor.h \
  /home/kishan/Documents/Projects/linux-system-monitor/include/network_monitor.h \
+ /usr/include/qt6/QtCore/QElapsedTimer \
+ /usr/include/qt6/QtCore/qelapsedtimer.h \
  /home/kishan/Documents/Projects/linux-system-monitor/include/process_monitor.h

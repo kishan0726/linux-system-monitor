@@ -637,52 +637,74 @@ ApplicationWindow {
 
         contentItem: ColumnLayout {
             spacing: 12
-            implicitWidth: window.selectedSection === "CPU" ? 860 : 380
+            implicitWidth:
+                (window.selectedSection === "CPU"
+                    || window.selectedSection === "MEMORY"
+                    || window.selectedSection === "DISK"
+                    || window.selectedSection === "NETWORK") ? 1000 : 380
 
             Loader {
                 id: detailsLoader
 
-             Layout.fillWidth: true
+                Layout.fillWidth: true
                 Layout.fillHeight: true
+                active: window.selectedSection === "CPU"
+                    || window.selectedSection === "MEMORY"
+                    || window.selectedSection === "DISK"
+                    || window.selectedSection === "NETWORK"
+
+                visible: active
+
                 Layout.preferredHeight:
                     (window.selectedSection === "CPU"
-                     || window.selectedSection === "MEMORY") ? 650 : 0
-
-             active: window.selectedSection === "CPU"
                         || window.selectedSection === "MEMORY"
+                        || window.selectedSection === "DISK"
+                        || window.selectedSection === "NETWORK") ? 650 : 0
 
-             visible: active
-
-             sourceComponent: {
+                sourceComponent: {
                     if (window.selectedSection === "CPU")
                         return cpuDetailsComponent
-
-                 if (window.selectedSection === "MEMORY")
+                    if (window.selectedSection === "MEMORY")
                         return memoryDetailsComponent
-
-                 return undefined
+                    if (window.selectedSection === "DISK")
+                        return diskDetailsComponent
+                    if (window.selectedSection === "NETWORK")
+                        return networkDetailsComponent
+                    return undefined
                 }
             }
 
             Component {
                 id: cpuDetailsComponent
-
-             CpuDetails {
+                CpuDetails {
                     monitor: cpuMonitor
                 }
             }
 
             Component {
                 id: memoryDetailsComponent
-
-             MemoryDetails {
+                MemoryDetails {
                     monitor: memoryMonitor
+                }
+            }
+
+            Component {
+                id: diskDetailsComponent
+                DiskDetails { monitor: diskMonitor }
+            }
+
+            Component {
+                id: networkDetailsComponent
+                NetworkDetails {
+                    monitor: networkMonitor
                 }
             }
 
             Repeater {
                 visible: window.selectedSection !== "CPU"
-                         && window.selectedSection !== "MEMORY"
+                    && window.selectedSection !== "MEMORY"
+                    && window.selectedSection !== "DISK"
+                    && window.selectedSection !== "NETWORK"
 
              model: window.detailsForSection(window.selectedSection)
 

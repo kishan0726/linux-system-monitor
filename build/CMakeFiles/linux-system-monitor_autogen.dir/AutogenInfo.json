@@ -1153,6 +1153,10 @@
 		"/usr/lib64/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
 		"/usr/lib64/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/usr/lib64/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"/usr/lib64/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"/usr/lib64/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
+		"/usr/lib64/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"/usr/lib64/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/qml_imports/linux-system-monitor_conf.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/kishan/Documents/Projects/linux-system-monitor",
@@ -1264,12 +1268,16 @@
 	"MOC_SKIP" : 
 	[
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp",
+		"/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0_extra_qmldirs.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp",
+		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_DiskActivityChart_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp",
+		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp",
+		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_qmltyperegistrations.cpp"
 	],
@@ -1324,12 +1332,16 @@
 	"UIC_SKIP" : 
 	[
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp",
+		"/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0_extra_qmldirs.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/rcc/qrc_qmake_LinuxSystemMonitor.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_Main_qml.cpp",
+		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_DiskActivityChart_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_MultiSeriesChart_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp",
+		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp",
+		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp",
 		"/home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_qmltyperegistrations.cpp"
 	],

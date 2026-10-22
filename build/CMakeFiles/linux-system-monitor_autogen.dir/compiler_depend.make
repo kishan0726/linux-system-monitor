@@ -289,6 +289,7 @@ linux-system-monitor_autogen/timestamp: /home/kishan/Documents/Projects/linux-sy
   /usr/include/linux/types.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QElapsedTimer \
   /usr/include/qt6/QtCore/QHash \
   /usr/include/qt6/QtCore/QList \
   /usr/include/qt6/QtCore/QObject \
@@ -296,6 +297,7 @@ linux-system-monitor_autogen/timestamp: /home/kishan/Documents/Projects/linux-sy
   /usr/include/qt6/QtCore/QTimer \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/QVariantList \
+  /usr/include/qt6/QtCore/QtGlobal \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20bit.h \
   /usr/include/qt6/QtCore/q20functional.h \
@@ -337,6 +339,7 @@ linux-system-monitor_autogen/timestamp: /home/kishan/Documents/Projects/linux-sy
   /usr/include/qt6/QtCore/qdatastream.h \
   /usr/include/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qelapsedtimer.h \
   /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
   /usr/include/qt6/QtCore/qflags.h \
@@ -1467,6 +1470,10 @@ linux-system-monitor_autogen/timestamp: /home/kishan/Documents/Projects/linux-sy
 
 /usr/lib64/cmake/Qt6Qml/Qt6QQmlNativeDebugConnectorFactoryPluginTargets-relwithdebinfo.cmake:
 
+/usr/lib64/cmake/Qt6Qml/Qt6QQmlNativeDebugConnectorFactoryPluginConfig.cmake:
+
+/usr/lib64/cmake/Qt6Qml/Qt6QQmlInspectorServiceFactoryPluginTargetsPrecheck.cmake:
+
 /usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6qmlshapespluginTargetsPrecheck.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6DmaBufServerBufferPluginTargetsPrecheck.cmake:
@@ -1530,6 +1537,10 @@ linux-system-monitor_autogen/timestamp: /home/kishan/Documents/Projects/linux-sy
 /usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6effectspluginTargetsPrecheck.cmake:
 
 /usr/include/c++/16/bits/stl_function.h:
+
+/usr/lib64/cmake/Qt6Qml/Qt6QQmlNativeDebugConnectorFactoryPluginAdditionalTargetInfo.cmake:
+
+/usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fluentwinui3stylepluginTargetsPrecheck.cmake:
 
 /usr/lib64/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
@@ -1682,10 +1693,6 @@ linux-system-monitor_autogen/timestamp: /home/kishan/Documents/Projects/linux-sy
 /usr/include/assert.h:
 
 /usr/include/qt6/QtCore/qstringlist.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6DrmEglServerBufferPluginTargetsPrecheck.cmake:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake:
 
 /usr/lib64/cmake/Qt6/Qt6VersionlessAliasTargets.cmake:
 
@@ -1849,6 +1856,8 @@ linux-system-monitor_autogen/timestamp: /home/kishan/Documents/Projects/linux-sy
 
 /usr/include/qt6/QtCore/qalloc.h:
 
+/usr/include/qt6/QtCore/QtGlobal:
+
 /usr/include/qt6/QtCore/q23type_traits.h:
 
 /usr/include/qt6/QtCore/q20utility.h:
@@ -1865,9 +1874,17 @@ linux-system-monitor_autogen/timestamp: /home/kishan/Documents/Projects/linux-sy
 
 /usr/include/qt6/QtCore/q20functional.h:
 
+/usr/include/qt6/QtCore/qelapsedtimer.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6DrmEglServerBufferPluginTargets.cmake:
+
+/usr/include/c++/16/bits/uniform_int_dist.h:
+
 /usr/lib64/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
 
 /usr/include/qt6/QtCore/QVariant:
+
+/usr/include/qt6/QtCore/QElapsedTimer:
 
 /usr/lib64/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
 
@@ -1894,8 +1911,6 @@ linux-system-monitor_autogen/timestamp: /home/kishan/Documents/Projects/linux-sy
 /usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6qmllocalstoragepluginConfig.cmake:
 
 /usr/include/gnu/stubs-64.h:
-
-/usr/lib64/cmake/Qt6Qml/Qt6QQmlInspectorServiceFactoryPluginTargetsPrecheck.cmake:
 
 /usr/include/qt6/QtCore/qconstructormacros.h:
 
@@ -2194,12 +2209,6 @@ linux-system-monitor_autogen/moc_predefs.h:
 /usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6qtwebenginequickpluginTargets-relwithdebinfo.cmake:
 
 /usr/include/c++/16/bits/stl_multiset.h:
-
-/usr/include/c++/16/bits/erase_if.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
-
-/usr/include/c++/16/stdexcept:
 
 /usr/lib64/cmake/Qt6QmlModels/Qt6QmlModelsTargetsPrecheck.cmake:
 
@@ -2683,19 +2692,9 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/lib64/cmake/Qt6Qml/Qt6QQmlInspectorServiceFactoryPluginConfig.cmake:
 
-/usr/lib64/cmake/Qt6Gui/Qt6DrmEglServerBufferPluginTargets.cmake:
-
-/usr/include/c++/16/bits/uniform_int_dist.h:
-
 /home/kishan/Documents/Projects/linux-system-monitor/include/network_monitor.h:
 
 /usr/include/c++/16/bits/unique_ptr.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6GuiConfig.cmake:
-
-/usr/include/qt6/QtCore/QTimer:
-
-/usr/lib64/cmake/Qt6Qml/Qt6QQmlDebugServerFactoryPluginTargetsPrecheck.cmake:
 
 /usr/include/c++/16/bits/version.h:
 
@@ -2819,6 +2818,12 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/bits/wordsize.h:
 
+/usr/include/c++/16/stdexcept:
+
+/usr/include/c++/16/bits/erase_if.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
+
 /usr/include/c++/16/tr1/exp_integral.tcc:
 
 /usr/lib64/cmake/Qt6Qml/Qt6QQuickProfilerAdapterFactoryPluginTargets.cmake:
@@ -2852,6 +2857,16 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2universalstylepluginConfig.cmake:
 
 /usr/include/c++/16/typeinfo:
+
+/usr/lib64/cmake/Qt6Gui/Qt6DrmEglServerBufferPluginTargetsPrecheck.cmake:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake:
+
+/usr/lib64/cmake/Qt6Gui/Qt6GuiConfig.cmake:
+
+/usr/include/qt6/QtCore/QTimer:
+
+/usr/lib64/cmake/Qt6Qml/Qt6QQmlDebugServerFactoryPluginTargetsPrecheck.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
 
@@ -2910,8 +2925,6 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargets.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargetsPrecheck.cmake:
-
-/usr/lib64/cmake/Qt6Qml/Qt6QQmlNativeDebugConnectorFactoryPluginConfig.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginAdditionalTargetInfo.cmake:
 
@@ -3778,7 +3791,3 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/lib64/cmake/Qt6Qml/Qt6QQmlDebuggerServiceFactoryPluginTargetsPrecheck.cmake:
 
 /usr/lib64/cmake/Qt6Qml/Qt6QQmlInspectorServiceFactoryPluginTargets.cmake:
-
-/usr/lib64/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fluentwinui3stylepluginTargetsPrecheck.cmake:
-
-/usr/lib64/cmake/Qt6Qml/Qt6QQmlNativeDebugConnectorFactoryPluginAdditionalTargetInfo.cmake:

@@ -10,38 +10,52 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
+qt_policy(SET QTP0004 NEW)
+
 qt_add_executable(linux-system-monitor
     src/main.cpp
+
     src/cpu_monitor.cpp
     include/cpu_monitor.h
+
     src/memory_monitor.cpp
     include/memory_monitor.h
-    include/disk_monitor.h
+
     src/disk_monitor.cpp
-    include/gpu_monitor.h
+    include/disk_monitor.h
+
     src/gpu_monitor.cpp
-    include/network_monitor.h
+    include/gpu_monitor.h
+
     src/network_monitor.cpp
-    include/process_monitor.h
+    include/network_monitor.h
+
     src/process_monitor.cpp
+    include/process_monitor.h
 )
 
 qt_add_qml_module(linux-system-monitor
     URI LinuxSystemMonitor
     VERSION 1.0
+
     QML_FILES
         qml/Main.qml
+
         qml/components/ResourceChart.qml
         qml/components/MultiSeriesChart.qml
+        qml/components/DiskActivityChart.qml
+
         qml/pages/CpuDetails.qml
         qml/pages/MemoryDetails.qml
+        qml/pages/DiskDetails.qml
+        qml/pages/NetworkDetails.qml
 )
+
 
 target_link_libraries(linux-system-monitor PRIVATE
     Qt6::Quick
 )
 
-target_include_directories(linux-system-monitor
-    PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
+target_include_directories(linux-system-monitor PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
 )

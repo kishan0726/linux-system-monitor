@@ -72,8 +72,11 @@ CMakeFiles/linux-system-monitor_copy_qml: .qt/linux-system-monitor_qml.txt
 .qt/linux-system-monitor_qml.txt: /home/kishan/Documents/Projects/linux-system-monitor/qml/Main.qml
 .qt/linux-system-monitor_qml.txt: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/ResourceChart.qml
 .qt/linux-system-monitor_qml.txt: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/MultiSeriesChart.qml
+.qt/linux-system-monitor_qml.txt: /home/kishan/Documents/Projects/linux-system-monitor/qml/components/DiskActivityChart.qml
 .qt/linux-system-monitor_qml.txt: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/CpuDetails.qml
 .qt/linux-system-monitor_qml.txt: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/MemoryDetails.qml
+.qt/linux-system-monitor_qml.txt: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/DiskDetails.qml
+.qt/linux-system-monitor_qml.txt: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/NetworkDetails.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying linux-system-monitor qml sources into build dir"
 	/usr/bin/cmake -DFILES_INFO_PATH=/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/linux-system-monitor_qml.cmake -P /usr/lib64/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
 

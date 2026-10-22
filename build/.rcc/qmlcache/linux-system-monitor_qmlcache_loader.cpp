@@ -26,6 +26,13 @@ namespace _qt_qml_LinuxSystemMonitor_qml_components_MultiSeriesChart_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_LinuxSystemMonitor_qml_components_DiskActivityChart_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 namespace _qt_qml_LinuxSystemMonitor_qml_pages_CpuDetails_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -34,6 +41,20 @@ namespace _qt_qml_LinuxSystemMonitor_qml_pages_CpuDetails_qml {
     };
 }
 namespace _qt_qml_LinuxSystemMonitor_qml_pages_MemoryDetails_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_LinuxSystemMonitor_qml_pages_DiskDetails_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_LinuxSystemMonitor_qml_pages_NetworkDetails_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -57,8 +78,11 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_Main_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/components/ResourceChart.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_components_ResourceChart_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/components/MultiSeriesChart.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_components_MultiSeriesChart_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/components/DiskActivityChart.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_components_DiskActivityChart_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/pages/CpuDetails.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_pages_CpuDetails_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/pages/MemoryDetails.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_pages_MemoryDetails_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/pages/DiskDetails.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_pages_DiskDetails_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/pages/NetworkDetails.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_pages_NetworkDetails_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;
