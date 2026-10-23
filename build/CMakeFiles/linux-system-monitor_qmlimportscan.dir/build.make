@@ -80,6 +80,8 @@ CMakeFiles/linux-system-monitor_qmlimportscan: .qt/qml_imports/linux-system-moni
 .qt/qml_imports/linux-system-monitor_build.cmake: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/MemoryDetails.qml
 .qt/qml_imports/linux-system-monitor_build.cmake: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/DiskDetails.qml
 .qt/qml_imports/linux-system-monitor_build.cmake: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/NetworkDetails.qml
+.qt/qml_imports/linux-system-monitor_build.cmake: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/GpuDetails.qml
+.qt/qml_imports/linux-system-monitor_build.cmake: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/ProcessDetails.qml
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/kishan/Documents/Projects/linux-system-monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running qmlimportscanner for linux-system-monitor"
 	cd /home/kishan/Documents/Projects/linux-system-monitor && /usr/lib64/qt6/libexec/qmlimportscanner @/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/qml_imports/linux-system-monitor_build.rsp
 

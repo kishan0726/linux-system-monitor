@@ -464,7 +464,7 @@ ApplicationWindow {
                             spacing: 8
 
                             Repeater {
-                                model: processMonitor.processes
+                                model: processMonitor.processes.slice(0, 5)
 
                                 delegate: RowLayout {
                                     required property var modelData
@@ -641,7 +641,8 @@ ApplicationWindow {
                 (window.selectedSection === "CPU"
                     || window.selectedSection === "MEMORY"
                     || window.selectedSection === "DISK"
-                    || window.selectedSection === "NETWORK") ? 1000 : 380
+                    || window.selectedSection === "NETWORK"
+                    || window.selectedSection === "GPU") ? 1000 : 380
 
             Loader {
                 id: detailsLoader
@@ -652,14 +653,18 @@ ApplicationWindow {
                     || window.selectedSection === "MEMORY"
                     || window.selectedSection === "DISK"
                     || window.selectedSection === "NETWORK"
+                    || window.selectedSection === "GPU"
+                    || window.selectedSection === "PROCESSES"
 
                 visible: active
 
                 Layout.preferredHeight:
                     (window.selectedSection === "CPU"
-                        || window.selectedSection === "MEMORY"
-                        || window.selectedSection === "DISK"
-                        || window.selectedSection === "NETWORK") ? 650 : 0
+                     || window.selectedSection === "MEMORY"
+                     || window.selectedSection === "DISK"
+                     || window.selectedSection === "NETWORK"
+                     || window.selectedSection === "GPU"
+                     || window.selectedSection === "PROCESSES") ? 650 : 0
 
                 sourceComponent: {
                     if (window.selectedSection === "CPU")
@@ -670,6 +675,10 @@ ApplicationWindow {
                         return diskDetailsComponent
                     if (window.selectedSection === "NETWORK")
                         return networkDetailsComponent
+                    if (window.selectedSection === "GPU")
+                        return gpuDetailsComponent
+                    if (window.selectedSection === "PROCESSES")
+                        return processDetailsComponent
                     return undefined
                 }
             }
@@ -700,11 +709,27 @@ ApplicationWindow {
                 }
             }
 
+            Component {
+                id: gpuDetailsComponent
+                GpuDetails {
+                    monitor: gpuMonitor
+                }
+            }
+
+            Component {
+                id: processDetailsComponent
+            
+                ProcessDetails {
+                    monitor: processMonitor
+                }
+            }
+
             Repeater {
                 visible: window.selectedSection !== "CPU"
                     && window.selectedSection !== "MEMORY"
                     && window.selectedSection !== "DISK"
                     && window.selectedSection !== "NETWORK"
+                    && window.selectedSection !== "GPU"
 
              model: window.detailsForSection(window.selectedSection)
 

@@ -61,6 +61,20 @@ namespace _qt_qml_LinuxSystemMonitor_qml_pages_NetworkDetails_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_LinuxSystemMonitor_qml_pages_GpuDetails_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_LinuxSystemMonitor_qml_pages_ProcessDetails_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -83,6 +97,8 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/pages/MemoryDetails.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_pages_MemoryDetails_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/pages/DiskDetails.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_pages_DiskDetails_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/pages/NetworkDetails.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_pages_NetworkDetails_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/pages/GpuDetails.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_pages_GpuDetails_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/LinuxSystemMonitor/qml/pages/ProcessDetails.qml"), &QmlCacheGeneratedCode::_qt_qml_LinuxSystemMonitor_qml_pages_ProcessDetails_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

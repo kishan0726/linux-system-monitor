@@ -351,7 +351,7 @@
         "classes": [
             {
                 "className": "GpuMonitor",
-                "lineNumber": 9,
+                "lineNumber": 10,
                 "object": true,
                 "properties": [
                     {
@@ -359,7 +359,7 @@
                         "designable": true,
                         "final": false,
                         "index": 0,
-                        "lineNumber": 13,
+                        "lineNumber": 14,
                         "name": "usage",
                         "notify": "updated",
                         "override": false,
@@ -376,7 +376,7 @@
                         "designable": true,
                         "final": false,
                         "index": 1,
-                        "lineNumber": 14,
+                        "lineNumber": 15,
                         "name": "temperature",
                         "notify": "updated",
                         "override": false,
@@ -393,7 +393,7 @@
                         "designable": true,
                         "final": false,
                         "index": 2,
-                        "lineNumber": 15,
+                        "lineNumber": 16,
                         "name": "usedVRAM",
                         "notify": "updated",
                         "override": false,
@@ -410,7 +410,7 @@
                         "designable": true,
                         "final": false,
                         "index": 3,
-                        "lineNumber": 16,
+                        "lineNumber": 17,
                         "name": "totalVRAM",
                         "notify": "updated",
                         "override": false,
@@ -427,7 +427,7 @@
                         "designable": true,
                         "final": false,
                         "index": 4,
-                        "lineNumber": 17,
+                        "lineNumber": 18,
                         "name": "name",
                         "notify": "updated",
                         "override": false,
@@ -444,7 +444,7 @@
                         "designable": true,
                         "final": false,
                         "index": 5,
-                        "lineNumber": 18,
+                        "lineNumber": 19,
                         "name": "available",
                         "notify": "updated",
                         "override": false,
@@ -455,6 +455,40 @@
                         "type": "bool",
                         "user": false,
                         "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "lineNumber": 21,
+                        "name": "history",
+                        "notify": "updated",
+                        "override": false,
+                        "read": "history",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "lineNumber": 22,
+                        "name": "vramHistory",
+                        "notify": "updated",
+                        "override": false,
+                        "read": "vramHistory",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVariantList",
+                        "user": false,
+                        "virtual": false
                     }
                 ],
                 "qualifiedClassName": "GpuMonitor",
@@ -462,7 +496,7 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 31,
+                        "lineNumber": 38,
                         "name": "updated",
                         "returnType": "void"
                     }
@@ -471,7 +505,7 @@
                     {
                         "access": "private",
                         "index": 1,
-                        "lineNumber": 34,
+                        "lineNumber": 41,
                         "name": "refresh",
                         "returnType": "void"
                     }
@@ -924,7 +958,22 @@
         "classes": [
             {
                 "className": "ProcessMonitor",
-                "lineNumber": 9,
+                "lineNumber": 12,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pid",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 25,
+                        "name": "terminateProcess",
+                        "returnType": "bool"
+                    }
+                ],
                 "object": true,
                 "properties": [
                     {
@@ -932,7 +981,7 @@
                         "designable": true,
                         "final": false,
                         "index": 0,
-                        "lineNumber": 13,
+                        "lineNumber": 16,
                         "name": "processes",
                         "notify": "updated",
                         "override": false,
@@ -949,7 +998,7 @@
                         "designable": true,
                         "final": false,
                         "index": 1,
-                        "lineNumber": 14,
+                        "lineNumber": 17,
                         "name": "processCount",
                         "notify": "updated",
                         "override": false,
@@ -967,16 +1016,37 @@
                     {
                         "access": "public",
                         "index": 0,
-                        "lineNumber": 23,
+                        "lineNumber": 28,
                         "name": "updated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pid",
+                                "type": "int"
+                            },
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 29,
+                        "name": "terminationResult",
                         "returnType": "void"
                     }
                 ],
                 "slots": [
                     {
                         "access": "private",
-                        "index": 1,
-                        "lineNumber": 26,
+                        "index": 2,
+                        "lineNumber": 32,
                         "name": "refresh",
                         "returnType": "void"
                     }

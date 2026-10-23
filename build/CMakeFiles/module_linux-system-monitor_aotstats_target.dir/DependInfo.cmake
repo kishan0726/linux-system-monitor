@@ -18,8 +18,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_components_ResourceChart_qml.cpp"
   "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_CpuDetails_qml.cpp"
   "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp"
+  "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp"
   "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp"
   "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp"
+  "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.aotstats" "/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp"
   )
 
 

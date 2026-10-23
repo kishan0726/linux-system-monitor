@@ -12,3 +12,5 @@
 /qt/qml/LinuxSystemMonitor/qml/pages/MemoryDetails.qml
 /qt/qml/LinuxSystemMonitor/qml/pages/DiskDetails.qml
 /qt/qml/LinuxSystemMonitor/qml/pages/NetworkDetails.qml
+/qt/qml/LinuxSystemMonitor/qml/pages/GpuDetails.qml
+/qt/qml/LinuxSystemMonitor/qml/pages/ProcessDetails.qml

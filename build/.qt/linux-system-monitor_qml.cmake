@@ -18,6 +18,10 @@ set(src_and_dest_list
     "/home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qml/pages/DiskDetails.qml"
     "/home/kishan/Documents/Projects/linux-system-monitor/qml/pages/NetworkDetails.qml"
     "/home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qml/pages/NetworkDetails.qml"
+    "/home/kishan/Documents/Projects/linux-system-monitor/qml/pages/GpuDetails.qml"
+    "/home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qml/pages/GpuDetails.qml"
+    "/home/kishan/Documents/Projects/linux-system-monitor/qml/pages/ProcessDetails.qml"
+    "/home/kishan/Documents/Projects/linux-system-monitor/build/LinuxSystemMonitor/qml/pages/ProcessDetails.qml"
 
 )
 set(timestamp_file "/home/kishan/Documents/Projects/linux-system-monitor/build/.qt/linux-system-monitor_qml.txt")

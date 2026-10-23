@@ -21,6 +21,8 @@ linux-system-monitor: \
   CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.o \
+  CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o \
   CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0_extra_qmldirs.cpp.o \
   /usr/lib64/libQt6Quick.so.6.11.2 \
@@ -181,6 +183,10 @@ CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp.o:
 
 CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp.o:
+
+CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.o:
+
+CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.o:
 
 CMakeFiles/linux-system-monitor.dir/build/.qt/rcc/qrc_linux-system-monitor_raw_qml_0.cpp.o:
 

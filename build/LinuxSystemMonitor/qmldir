@@ -9,5 +9,7 @@ CpuDetails 1.0 qml/pages/CpuDetails.qml
 MemoryDetails 1.0 qml/pages/MemoryDetails.qml
 DiskDetails 1.0 qml/pages/DiskDetails.qml
 NetworkDetails 1.0 qml/pages/NetworkDetails.qml
+GpuDetails 1.0 qml/pages/GpuDetails.qml
+ProcessDetails 1.0 qml/pages/ProcessDetails.qml
 depends QtQuick
 

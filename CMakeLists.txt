@@ -49,6 +49,8 @@ qt_add_qml_module(linux-system-monitor
         qml/pages/MemoryDetails.qml
         qml/pages/DiskDetails.qml
         qml/pages/NetworkDetails.qml
+        qml/pages/GpuDetails.qml
+        qml/pages/ProcessDetails.qml
 )
 
 

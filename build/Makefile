@@ -579,6 +579,30 @@ build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp.s
 .PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.cpp.s
 
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.o: build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.o
+
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.i: build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.i
+
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.s: build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.cpp.s
+
 build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.o: build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.cpp.o
 .PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.o
 
@@ -626,6 +650,30 @@ build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.s: build/.
 build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp.s
 .PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.cpp.s
+
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.o: build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.o
+
+# target to build an object file
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.o
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.o
+
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.i: build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.i
+
+# target to preprocess a source file
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.i
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.i
+
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.s: build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.s
+
+# target to generate assembly for a file
+build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linux-system-monitor.dir/build.make CMakeFiles/linux-system-monitor.dir/build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.s
+.PHONY : build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.cpp.s
 
 build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.o: build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.cpp.o
 .PHONY : build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.o
@@ -921,12 +969,18 @@ help:
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.o"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.i"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_DiskDetails_qml.s"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.o"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.i"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_GpuDetails_qml.s"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.o"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.i"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_MemoryDetails_qml.s"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.o"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.i"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_NetworkDetails_qml.s"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.o"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.i"
+	@echo "... build/.rcc/qmlcache/linux-system-monitor_qml_pages_ProcessDetails_qml.s"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.o"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.i"
 	@echo "... build/.rcc/qmlcache/linux-system-monitor_qmlcache_loader.s"

@@ -5,6 +5,9 @@
 #include <QObject>
 #include <QTimer>
 #include <QVariantList>
+#include <QElapsedTimer>
+
+#include <QHash>
 
 class ProcessMonitor : public QObject
 {
@@ -19,8 +22,11 @@ public:
     QVariantList processes() const;
     int processCount() const;
 
+    Q_INVOKABLE bool terminateProcess(int pid);
+
 signals:
     void updated();
+    void terminationResult(int pid, bool success, const QString &message);
 
 private slots:
     void refresh();
@@ -28,6 +34,9 @@ private slots:
 private:
     QVariantList m_processes;
     int m_processCount = 0;
+
+    QHash<int, qulonglong> m_previousTicks;
+    QElapsedTimer m_elapsed;
     QTimer m_timer;
 };
 

@@ -21,5 +21,7 @@
 /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/MemoryDetails.qml
 /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/DiskDetails.qml
 /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/NetworkDetails.qml
+/home/kishan/Documents/Projects/linux-system-monitor/qml/pages/GpuDetails.qml
+/home/kishan/Documents/Projects/linux-system-monitor/qml/pages/ProcessDetails.qml
 --json
 /home/kishan/Documents/Projects/linux-system-monitor/build/linux-system-monitor_qmllint.json

@@ -3,6 +3,13 @@
 
 #include <QProcess>
 #include <QStringList>
+#include <QVariant>
+#include <QtGlobal>
+
+namespace {
+constexpr qsizetype MAX_HISTORY = 120;
+constexpr int REFRESH_INTERVAL_MS = 2000;
+}
 
 GpuMonitor::GpuMonitor(QObject *parent)
     : QObject(parent)
@@ -11,37 +18,24 @@ GpuMonitor::GpuMonitor(QObject *parent)
             this, &GpuMonitor::refresh);
 
     refresh();
-    m_timer.start(2000);
+    m_timer.start(REFRESH_INTERVAL_MS);
 }
 
-double GpuMonitor::usage() const
+double GpuMonitor::usage() const { return m_usage; }
+double GpuMonitor::temperature() const { return m_temperature; }
+double GpuMonitor::usedVRAM() const { return m_usedVRAM; }
+double GpuMonitor::totalVRAM() const { return m_totalVRAM; }
+QString GpuMonitor::name() const { return m_name; }
+bool GpuMonitor::available() const { return m_available; }
+
+QVariantList GpuMonitor::history() const
 {
-    return m_usage;
+    return m_history;
 }
 
-double GpuMonitor::temperature() const
+QVariantList GpuMonitor::vramHistory() const
 {
-    return m_temperature;
-}
-
-double GpuMonitor::usedVRAM() const
-{
-    return m_usedVRAM;
-}
-
-double GpuMonitor::totalVRAM() const
-{
-    return m_totalVRAM;
-}
-
-QString GpuMonitor::name() const
-{
-    return m_name;
-}
-
-bool GpuMonitor::available() const
-{
-    return m_available;
+    return m_vramHistory;
 }
 
 void GpuMonitor::refresh()
@@ -54,9 +48,28 @@ void GpuMonitor::refresh()
         "--format=csv,noheader,nounits"
     });
 
-    if (!process.waitForStarted(1000)
-        || !process.waitForFinished(2000)
-        || process.exitStatus() != QProcess::NormalExit
+    if (!process.waitForStarted(1000)) {
+        m_available = false;
+        m_name = "GPU unavailable";
+        emit updated();
+        return;
+    }
+
+    if (!process.waitForFinished(2000)) {
+        process.terminate();
+
+        if (!process.waitForFinished(300)) {
+            process.kill();
+            process.waitForFinished(1000);
+        }
+
+        m_available = false;
+        m_name = "GPU unavailable";
+        emit updated();
+        return;
+    }
+
+    if (process.exitStatus() != QProcess::NormalExit
         || process.exitCode() != 0) {
         m_available = false;
         m_name = "GPU unavailable";
@@ -67,7 +80,16 @@ void GpuMonitor::refresh()
     const QString output =
         QString::fromLocal8Bit(process.readAllStandardOutput()).trimmed();
 
-    const QStringList fields = output.split(',');
+    if (output.isEmpty()) {
+        m_available = false;
+        m_name = "GPU unavailable";
+        emit updated();
+        return;
+    }
+
+    // Use the first GPU row if the system has multiple GPUs.
+    const QString firstLine = output.section('\n', 0, 0).trimmed();
+    const QStringList fields = firstLine.split(',');
 
     if (fields.size() < 5) {
         m_available = false;
@@ -91,7 +113,9 @@ void GpuMonitor::refresh()
         fields[4].trimmed().toDouble(&okTotal);
 
     if (!okUsage || !okTemperature || !okUsed
-        || !okTotal || totalValue <= 0) {
+        || !okTotal || totalValue <= 0
+        || usageValue < 0 || usageValue > 100
+        || usedValue < 0 || usedValue > totalValue) {
         m_available = false;
         m_name = "GPU unavailable";
         emit updated();
@@ -104,6 +128,16 @@ void GpuMonitor::refresh()
     m_usedVRAM = usedValue;
     m_totalVRAM = totalValue;
     m_available = true;
+
+    // Keep GPU usage and VRAM history as numeric samples.
+    m_history.append(m_usage);
+    m_vramHistory.append(m_usedVRAM);
+
+    while (m_history.size() > MAX_HISTORY)
+        m_history.removeFirst();
+
+    while (m_vramHistory.size() > MAX_HISTORY)
+        m_vramHistory.removeFirst();
 
     emit updated();
 }

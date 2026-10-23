@@ -75,6 +75,8 @@ CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/li
 CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/MemoryDetails.qml
 CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/DiskDetails.qml
 CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/NetworkDetails.qml
+CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/GpuDetails.qml
+CMakeFiles/linux-system-monitor_qmllint_json: /home/kishan/Documents/Projects/linux-system-monitor/qml/pages/ProcessDetails.qml
 CMakeFiles/linux-system-monitor_qmllint_json: .rcc/qmllint/linux-system-monitor_json.rsp
 	cd /home/kishan/Documents/Projects/linux-system-monitor && /usr/lib64/qt6/bin/qmllint @/home/kishan/Documents/Projects/linux-system-monitor/build/.rcc/qmllint/linux-system-monitor_json.rsp
 
